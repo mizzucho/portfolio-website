@@ -1,0 +1,132 @@
+/*
+Colors used:
+Primary Color for hyperlink (Blue): #05676e;
+Secondary Color for hyperlink (Green): #489c79;
+Primary Color (light green): #F6FCF7;
+Secondary Color (darker Green): #8AA08D;
+Hover test color: 26542C;
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+}
+header {
+  background-color: #F6FCF7;
+}
+
+#contact {
+  background-color: #F6FCF7;
+}
+
+h1 {
+  line-height: 1.0;
+}
+
+h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.12em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: black;
+}
+a:hover,
+a:focus {
+  color: #85D690;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  color: #072E0C;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: white;
+  color:#8AA08D; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #8AA08D; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:visited { /* visited link */
+  color: #8AA08D;
+}
+
+.button:hover {
+  background-color: #8AA08D;
+  color:white;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: #26542C;
+  color: #F6FCF7;
+  text-transform: uppercase;
+  border: 2px solid #26542C;
+}
+.button.contact:hover {
+  background-color: #26542C;
+  color: #ffffff;
+}
+.button.contact:active {
+  background-color: #072E0C;
+  color: #ffffff;
+}
+#subtitle{
+  font-family: 'Lora', serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.download-cv{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #26542C;
+  color: #ffffff;/* needed to override the default link color */
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #26542C; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.download-cv:hover{
+  background-color: #F6FCF7;
+  color:#26542C;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta charset="utf-8">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="author" content="Mizzu Cho">
       <meta name="description" content="UX UI Portfolio">
@@ -12,6 +13,10 @@
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
       <meta name="msapplication-TileColor" content="#da532c">
       <meta name="theme-color" content="#ffffff">
+      <!-- link to your CSS stylesheet -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
    <body>
       <!-- For the header -->
@@ -30,17 +35,16 @@
       </header>
       <main>
          <!-- Start of hero section -->
-         <div>
+         <div id="hero">
             <div>
-               <h1>Hi, my name is Mizzu Cho.<br>
-                  <span>I’m a UX researcher and designer based in Austin, TX</span>
-               </h1>
-               <p>I make design decisions to humanize the product and vocalize the story</p>
+               <h1 style="text-align:center;">Hi, my name is Mizzu Cho.</h1>
+               <h2 style="text-align:center;" id="subtitle">I’m a UX researcher and designer based in Austin, TX.</h2>
+                <p style="text-align:center;">I make design decisions to humanize the product and vocalize the story.</p>
             </div>
          </div>
          <!-- End of hero section -->
          <!-- start of work section -->
-         <div>
+         <div id="work">
             <div>
                <!-- Container for work section -->
                <h2>My Work</h2>
@@ -57,7 +61,7 @@
                   <div>
                      <h3>Diction</h3>
                      <p>A mobile application to help users learn new vocabularies by pracitcing using the words in a real conversation with A.I.</p>
-                     <a href="diction.html">Read more</a>
+                     <a href="diction.html" class="button">Read more</a>
                   </div>
                   <!-- end of text column -->
                </div>
@@ -75,7 +79,7 @@
                   <div>
                      <h3>Snapshot</h3>
                      <p>A mobile application to help users organize their blood results in one spot and analyze their health better.</p>
-                     <a href="snapshot.html">Read more</a>
+                     <a href="snapshot.html" class="button">Read more</a>
                   </div>
                   <!-- end of text column -->
                </div>
@@ -90,7 +94,7 @@
          <div>
             <h2>Get in Touch</h2>
             <p>Let’s start talking! Shoot me an email or shoot me a DM on any social media platform you feel comfortable with! You can find me as either @nicetomizzu or @mizzucho.</p>
-            <div><a href="mailto:mizzucho@gmail.com">Send Email</a></div>
+            <div><a href="mailto:mizzucho@gmail.com" class="contact button">Send Email</a></div>
             <br>
          </div>
          <div>
