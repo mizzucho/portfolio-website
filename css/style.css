@@ -4,23 +4,19 @@ Primary Color for hyperlink (Blue): #05676e;
 Secondary Color for hyperlink (Green): #489c79;
 Primary Color (light green): #F6FCF7;
 Secondary Color (darker Green): #8AA08D;
-Hover test color: 26542C;
+active test color: 26542C;
 */
 
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 12px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
-}
-header {
-  background-color: #F6FCF7;
-  padding: 10px;
-  margin: auto 10px;
-  border-bottom: 1px solid #8AA08D;
 }
 
 #contact {
@@ -71,8 +67,9 @@ a:focus {
   text-decoration: underline;
 }
 a:active { /* selected link */
-  color: #072E0C;
+  color: #26542C;
 }
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: white;
@@ -135,3 +132,118 @@ a:active { /* selected link */
   color:#26542C;
 }
 #hero { text-align: center; }
+
+selector {
+  box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+}
+selector {
+  float: right;
+}
+selector {
+  width: 1200px;
+}
+selector {
+  width: 80%;
+}
+.container {
+  max-width: 1200px;
+}
+
+/* Layout styling */
+.container {
+  padding: 20px 15px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #C1D2C3;
+}
+
+#hero h1 {
+  padding-top: 25px;
+  width: 100%; /* Centers text */
+}
+
+.center {
+  text-align: center;
+}
+
+header {
+  background-color: #F6FCF7;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  box-shadow:0px 10px 5px 0px rgba(50, 50, 50, 0.4);
+  position: fixed;
+}
+.logo {
+  max-width: 200px;
+  text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited{
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8AA08D;
+}
+nav > ul > li > a:hover{
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8DD990;
+}
+nav > ul > li > a:active{
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #26542C;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+#hero {
+  background-color: #F6FCF7;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 116.78px;
+}
+#instagram {
+  width: 40px;
+  text-align: center;
+  margin: 0 10px;
+}
+#linkedin {
+  width: 40px;
+  margin: 0 10px;
+  text-align: center;
+}
+#behance {
+  width: 45px;
+  margin: 0 5px;
+  position: relative;
+  top: 5px;
+}
