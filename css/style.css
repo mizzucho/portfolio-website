@@ -7,6 +7,7 @@ Secondary Color (darker Green): #8AA08D;
 Hover test color: 26542C;
 */
 
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -17,6 +18,9 @@ body {
 }
 header {
   background-color: #F6FCF7;
+  padding: 10px;
+  margin: auto 10px;
+  border-bottom: 1px solid #8AA08D;
 }
 
 #contact {
@@ -130,3 +134,4 @@ a:active { /* selected link */
   background-color: #F6FCF7;
   color:#26542C;
 }
+#hero { text-align: center; }
