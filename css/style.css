@@ -13,7 +13,7 @@ active test color: 26542C;
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px; /* Sets the font size to 16px */
+  font-size: 14px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -31,17 +31,17 @@ h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.12em;
-  font-weight: 700;
-}
-
-h2 {
   font-size: 2em;
   font-weight: 700;
 }
 
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
 h3 {
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 h4 {
@@ -78,7 +78,8 @@ a:active { /* selected link */
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #8AA08D; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.4s;
+  transition-property: color;
 }
 
 .button:visited { /* visited link */
@@ -102,6 +103,8 @@ a:active { /* selected link */
   color: #F6FCF7;
   text-transform: uppercase;
   border: 2px solid #26542C;
+  transition-duration: 0.3s;
+  transition-property: opacity;
 }
 .button.contact:hover {
   background-color: #26542C;
@@ -110,11 +113,6 @@ a:active { /* selected link */
 .button.contact:active {
   background-color: #072E0C;
   color: #ffffff;
-}
-#subtitle{
-  font-family: 'Lora', serif;
-  font-size: 25px;
-  font-weight: 300;
 }
 
 .download-cv{
@@ -125,40 +123,68 @@ a:active { /* selected link */
   padding: 15px;
   border-radius: 10px;
   border: 2px solid #26542C; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.4s;
+  transition-property: color;
 }
 .download-cv:hover{
   background-color: #F6FCF7;
   color:#26542C;
 }
-#hero { text-align: center; }
+#hero {
+  text-align: center;
+ }
 
 
 
 /* Layout styling */
+.center {text-align: center;}
 .container {
   padding: 10px 15px;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
 }
+.socialmedia {
+  padding: 50px 15px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer{
+  text-align: center;
+  padding:50px 20px;
+}
+footer h3 {
+  color:#26542C;
+}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-
-#work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #C1D2C3;
-}
-
 #hero h1 {
-  padding-top: 25px;
+  padding-top: 20px;
   width: 100%; /* Centers text */
 }
-
-.center {
-  text-align: center;
+#subtitle{
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 30px;
 }
-
+#work {
+  padding: 40px 0;
+}
+#work h2{
+  padding:30px;
+  color:#8AA08D;
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #C1D2C3;
+}
+#diction {
+      padding-top: 20px;
+      border-top: 1px solid #C1D2C3;
+    }
 
 header {
   background-color: #F6FCF7;
@@ -169,6 +195,7 @@ header {
   box-shadow:0px 10px 5px 0px rgba(50, 50, 50, 0.4);
   position: fixed;
 }
+
 .logo {
   max-width: 200px;
   text-align: center;
@@ -181,25 +208,25 @@ nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a {
-  padding: 0 20px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 nav > ul > li > a:visited{
-  padding: 0 20px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #8AA08D;
 }
 nav > ul > li > a:hover{
-  padding: 0 20px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #8DD990;
 }
 nav > ul > li > a:active{
-  padding: 0 20px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #26542C;
@@ -233,26 +260,184 @@ main, #project {
   top: 5px;
 }
 
-#contact p {
-  text-align: left;
-  padding:0 10px;
-  padding-bottom: 10px;
-}
 
-/*aboutpage styling */
+/*about page styling */
 #about {
   padding-top: 50px;
   text-align: center;
 }
 
-#skills-tools ul {
-  list-style-type: none;
-  padding: 0;
-}
 #mystory p{
   text-align: left;
   padding-bottom: 10px;
 }
 #mystory {
   padding-bottom: 20px;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+/*Home page styling */
+.container {
+  text-align: unset;
+}
+header {
+  text-align: unset;
+  padding: 20px 0 10px 20px;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+main, #project {
+    padding-top: 100px;
+  }
+.logo {
+    max-width: 180px;
+  }
+#hero {
+    font-size: 1.1em;
+  }
+footer {
+      font-size: 1.1em;
+      padding:60px 20px;
+    }
+
+.column.col-md-6.col-lg-7 {
+      width: 50%;
+    }
+.column.col-md-6.col-lg-5 {
+          width: 50%;
+        }
+[class*="col-"] {
+      float: left;
+      padding: 0 10px;
+    }
+.row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+#diction {
+      padding-top: 20px;
+      border-top: 1px solid #C1D2C3;
+    }
+.container {
+          padding: 10px 20px;
+          max-width: 950px;
+          margin: 0 auto;
+        }
+
+/*animation */
+#about-picture{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/*About page styling */
+#about h2{
+  text-align: center;
+  padding:5px 0;
+}
+.about-content{
+  padding-bottom: 100px;
+}
+.col-md-2 {
+      width: 22.5%;
+      padding-left:25px;
+      text-align: left;
+    }
+#skills-tools, #mystory {
+  float: left;
+  padding: 0 10px;
+  width: 50%;
+}
+.row {
+      margin: 20px 0; /* 25px top and bottom, 0 left and right */
+    }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+main, #project {
+      padding-top: 90px;
+    }
+/*Home page styling */
+.container {
+          padding: 10px 20px;
+          max-width: 950px;
+          margin: 0 auto;
+        }
+#contact p {
+    text-align: center;
+    padding:0 120px;
+    padding-bottom: 10px;
+  }
+#hero {
+      font-size: 1.2em;
+    }
+footer {
+      background-color: #F6FCF7
+      padding:100px 20px;
+      }
+#diction {
+      padding-top: 20px;
+      border-top: 1px solid #C1D2C3;
+    }
+.column.col-md-6.col-lg-7 {
+          width: 58.33%;
+        }
+.column.col-md-6.col-lg-5 {
+          width: 41.66%;
+            }
+/*About page styling */
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1600px) {
+/*Home page styling */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#diction {
+    padding-top: 20px;
+    border-top: 1px solid #C1D2C3;
+  }
+/*About page styling */
 }
