@@ -457,12 +457,29 @@ padding:30px 0;
 .diction{
   padding-top: 150px;
 }
-.diction ul li {
+.diction-row {
+  padding:10px 10px;
+  border-top: 1px solid #3A3A3A;
+  text-align:left;
+}
+.diction h4{
+  text-align: center;
+}
+.diction-row ol{
+padding-inline-start: unset;
+padding:0 20px;
+}
+.diction-row ol li{
+text-align: left;
+padding:3px 0;
+}
+.diction ol li {
   text-align: left;
 }
 .table-of-content{
+  border-top: 1px solid #3A3A3A;
   text-align: center;
-  padding:0;
+  padding:20px 0;
 }
 .table-of-content ol li{
   list-style-type: none;
@@ -470,12 +487,8 @@ padding:30px 0;
 .table-of-content ol {
   padding-inline-start: unset;
 }
-#left{
+.left{
   text-align: left;
-  padding:20;
-}
-.thankyou{
-  padding:100px 0;
 }
 .diction-persona {
   padding: 10px 15px;
@@ -494,9 +507,59 @@ padding:30px 0;
 .diction-userflow span{
   font-weight: 700;
 }
+.button.diction-testplan {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #C4C4C4;
+  color:white; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border:none;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+.button.diction-testplan:visited { /* visited link */
+  color: white;
+}
+.button.diction-testplan:hover {
+  background-color: #C4C4C4;
+  color:white;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.diction-testplan:active
+{
+  color: white;
+  text-decoration: none;
+}
+.button.diction-prototype {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #C4C4C4;
+  color:white; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 10px;
+  border:none;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+.button.diction-prototype:visited { /* visited link */
+  color: white;
+}
+.button.diction-prototype:hover {
+  background-color: #C4C4C4;
+  color:white;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.diction-prototype:active
+{
+  color: white;
+  text-decoration: none;
+}
 .conclusion{
   border-top: 1px solid #8AA08D;
-  padding: 30px 20px;
+  padding: 10px 20px;
   text-align: left;
   max-width: 1200px;
 }
@@ -508,11 +571,17 @@ padding:30px 0;
   font-weight: 700;
   color:#072E0C;
 }
-.conclusion ul{
-  padding:10px;
+.conclusion ul {
+  padding:20px;
+}
+.conclusion ul li{
+  padding:5px 0;
 }
 .empty{
   padding:30px;
+}
+.thankyou{
+  padding:50px 0;
 }
 
 /*animation*/
@@ -734,6 +803,62 @@ padding:100px 0;
 }
 .snapshot-buttons{
   padding: 50px 0;
+}
+
+
+
+/*diction styling:large*/
+
+.diction-row {
+  padding:50px 100px;
+  border-top: 1px solid #3A3A3A;
+}
+
+.diction-row ol{
+padding-inline-start: unset;
+padding:0 20px;
+}
+.diction-row ol li{
+text-align: left;
+padding:3px 0;
+}
+.diction ol li {
+  text-align: left;
+}
+.table-of-content{
+  border-top: 1px solid #3A3A3A;
+  text-align: center;
+  padding:20px 20px;
+}
+.table-of-content ol li{
+  list-style-type: none;
+  text-align: center;
+}
+.table-of-content ol {
+  padding-inline-start: unset;
+}
+
+#diction-persona-image {
+  padding: 100px;
+}
+.diction-personap{
+  padding:20px 0;
+}
+.diction.revision-needed{
+  padding:100px 200px;
+}
+.diction.prototyp.position{
+  text-align: center;
+  padding:20px auto;
+}
+.conclusion{
+  border-top: 1px solid #8AA08D;
+  padding: 200px 250px;
+  text-align: left;
+  max-width: 1200px;
+}
+.thankyou{
+  padding:250px 0;
 }
 }
 
