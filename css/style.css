@@ -627,8 +627,114 @@ Medium devices (640px and larger)
 }
 
 /*snapshot page*/
-
-
+.snapshot .empty{
+  padding:250px;
+}
+.snapshot-statistic{
+  width:50%;
+  float:center;
+  padding:70px 100px;
+}
+.snapshot-logo{
+  text-align: center;
+  padding:30px 0;
+}
+#snapshot-logo{
+  width:200px;
+}
+.snapshot-row {
+  padding:50px 100px;
+  border-top: 1px solid #E57272;
+}
+.snapshot-row p{
+  padding: 0 100px;
+}
+.snapshot-row ul{
+padding-inline-start: unset;
+padding-left: 100px;
+}
+.snapshot-row ul li{
+text-align: left;
+padding:3px 0;
+}
+.snapshot-tools{
+  padding:0 100px;
+  text-align: center;
+}
+.snapshot-tools picture{
+  padding:0 5px;
+}
+#miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
+  width:10%;
+  display:inline-block;
+}
+/*understand*/
+.ca{
+  padding:100px 0;
+}
+#ca-image{
+  padding: 10px 100px;
+}
+.interview{
+  padding:100px 0;
+}
+#interview-image{
+  padding: 10px 100px;
+}
+/*define*/
+.persona{
+  padding:100px 0;
+}
+#persona-image{
+padding: 0px 300px;
+}
+.user-journey{
+padding:100px 0;
+}
+#user-journey-image{
+padding: 0px 300px;
+}
+.user-flow{
+ padding:100px 0;
+}
+#user-flow-image{
+ padding: 0px 300px;
+}
+/*ideate*/
+.card-sorting{
+padding:100px 0;
+}
+#card-sorting-image{
+ padding:0 90px;
+}
+.ia{
+padding:100px 0;
+}
+#ia-image{
+ padding:0 300px;
+}
+/*prototype*/
+.lofi{
+padding:100px 0;
+}
+#lofi-image{
+ padding: 10px 60px;
+}
+.hifi{
+padding:100px 0;
+}
+#hifi-image{
+  padding: 10px 100px;
+}
+.ab-testing{
+padding:100px 0;
+}
+.snapshot main{
+  padding-bottom:300px;
+}
+.snapshot-buttons{
+  padding: 50px 0;
+}
 }
 
 /* ==============================
