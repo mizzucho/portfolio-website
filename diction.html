@@ -20,68 +20,65 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
    </head>
-   <body>
-      <!-- For the header -->
-      <header id="top">
-         <!-- For the navigation -->
-         <div class="container">
-            <img src="img/logo.2x.png" alt="Mizzu Cho logo" class="logo">
-            <nav>
-               <ul class="navigation">
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-               </ul>
-            </nav>
-         </div>
-      </header>
-      <main>
-         <!-- Diction Project:start -->
-         <!-- Diction: title -->
-         <div class="container" id="project">
-            <div class="container">
-               <h1>Project1:DICTION</h1>
-               <p>A mobile application to help users learn new vocabularies by pracitcing using the words in a real conversation with A.I.</p>
-            </div>
 
+
+   <body>
+      <header id="top">
+        <div class="container">
+          <a href="index.html">
+            <img class="logo" src="img/logo.2x.png" alt="Mizzu Cho logo">
+          </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        </div>
+      </header>
+
+      <main class="diction">
+        <div>
+          <div class="container">
+               <h1>Project 1:DICTION</h1>
+               <p>A mobile application to help users learn new vocabularies by pracitcing using the words in a real conversation with A.I.</p>
+          </div>
+        </div>
          <!-- Diction: Cover Graphic -->
-         <div>
-            <picture>
+        <div>
+        <div>
+        <picture>
                <source srcset="img/mobile/diction/cover.1x.jpg" media="(max-width:767px)">
                <img src="img/desktop/diction/cover.2x.png"  alt="Diction Cover Graphic">
-            </picture>
-         </div>
-         <!-- Diction: 1st graphic -->
-         <div>
-            <picture>
+        </picture>
+        </div>
+        <div>
+        <picture><!-- Diction: 1st graphic -->
                <source srcset="img/mobile/diction/graphic1.1x.jpg" media="(max-width:767px)">
                <img src="img/desktop/diction/graphic1.2x.jpg" alt="Diction graphic 1">
-            </picture>
-         </div>
-         <!-- Diction: 2nd graphic -->
-         <div>
-            <picture>
+        </picture>
+        </div>
+        <div>
+        <picture> <!-- Diction: 2nd graphic -->
                <source srcset="img/mobile/diction/graphic2.1x.jpg" media="(max-width:767px)">
                <img src="img/desktop/diction/graphic2.2x.jpg" alt="Diction graphic 2">
-            </picture>
-         </div>
-         <!-- Diction: 3rd graphic -->
-         <div>
-            <picture>
+        </picture>
+        </div>
+        <div>
+        <picture><!-- Diction: 3rd graphic -->
                <source srcset="img/mobile/diction/graphic3.1x.png" media="(max-width:767px)">
                <img src="img/desktop/diction/graphic3.2x.png" alt="Diction graphic 4">
-            </picture>
-         </div>
-         <!-- Diction: 4th graphic -->
-         <div>
-            <picture>
+        </picture>
+        </div>
+        <div>
+        <picture><!-- Diction: 4th graphic -->
                <source srcset="img/mobile/diction/graphic4.1x.png" media="(max-width:767px)">
                <img src="img/desktop/diction/graphic4.2x.png" alt="Diction graphic 4">
-            </picture>
-         </div>
-         <!-- Diction: table of contents -->
-         <div>
-            <div>
+        </picture>
+        </div>
+        </div>
+        <div class="table-of-content">
                <h2>Design Process</h2>
                <ol>
                   <li><a href="#competitoranalysis">Competitor Analysis</a></li>
@@ -91,114 +88,107 @@
                   <li><a href="#wireframingandprototyping">Wireframing and Prototyping</a></li>
                   <li><a href="#usabilitytesting">Usability Testing</a></li>
                </ol>
+        </div>
+
+         <div class="container"><!--CA:Start -->
+         <h2>1 Competitive anlaysis</h2>
+             <div><!--CA:Quizlet -->
+             <h3>Quizlet</h3>
+             <div>
+              <div>
+              <picture>
+              <source srcset="img/mobile/diction/ca.quizlet.1x.jpg" media="(max-width:767px)">
+              <img src="img/desktop/diction/ca.quizlet.2x.jpg" alt="Competitive anlaysis:Quizlet">
+              </picture>
+              </div>
+              <div><!--explanation:Quizlet-->
+              <div>
+                <h4>pros</h4>
+                <ol id="left">
+                <li>Clean organization makes users easy to follow/use the app </li>
+                <li>Simple survey introduction in order to connect the user with the other users who have taken the same study courses and already created a set of words to study. This maximizes the efficiency in studying and network among the school peers.</li>
+                <li>Different users could collaborate in editing a set of words, fixing mistakes, and adding more information.</li>
+                <li>Different tools, such as flashcards, quizzes, and games with other users, keep the users engaged and spend more time on the app.</li>
+                <li>Personalized flashcards and network will make the user become more loyal to the application because the users wouldn't want to lose the data.</li>
+              </ol>
+              </div>
+              <div>
+                <h4>cons</h4>
+                <ol id="left">
+                <li>Too many tools all together on one page could confuse the users when the users are just starting to use the app.</li>
+                <li>Users must create an account with an email in order to use the application. Some users who don't want to type in personal information could be distracted by this feature.</li>
+                <li>On one page, the distinction between the word and the definition is clear but on the other pages, there is no clear distinction between the word and the definition on the flashcard which could confuse the users when studying the words.</li>
+                <li>The transition is often lagging when the user tries to slide the flashcard to view the next flashcard because the app is confused whether the user is trying to flip the card or slide the card.</li>
+              </ol>
+              </div>
+              </div>
+              </div>
+              </div>
+
+             <div><!--CA:Word of the day -->
+             <h3>Quizlet</h3>
+                <div>
+                <div>
+                <picture>
+                  <source srcset="img/mobile/diction/ca.vocabulary.1x.jpg" media="(max-width:767px)">
+                  <img src="img/desktop/diction/ca.vocabulary.2x.jpg" alt="Competitive anlaysis:Vocabulary">
+                </picture>
+                </div>
+                <div><!--explanation:Word of the day-->
+                <div>
+                  <h4>pros</h4>
+                  <ol id="left">
+                    <li>Smooth animated transitions</li>
+                    <li>Quick, simple survey introduction to personalize the vocabulary</li>
+                    <li>Trendy fonts and illustrations that would grab attention from the young audience</li>
+                    <li>A lot of negative space emphasizes the word and its definition</li>
+                    <li>Vocabulary list can be categorized by different topics such as society, the human body, and medical.</li>
+                    <li>Vocabulary words in other languages are also available.</li>
+                  </ol>
+                </div>
+                <div>
+                  <h4>cons</h4>
+                  <ol id="left">
+                  <li>The free trial only lasts for 3 days</li>
+                  <li>Application doesn't contain enough tools to have users pay so much when there are other free vocab learning apps such as Quizlet.</li>
+                  <li>Lacks content variety. Other than the customizable visuals of the application, this application doesn't have any other tools to train users to memorize the vocab. The customizable background tool seems unnecessary.</li>
+                </ol>
+                </div>
+                </div>
+                </div>
             </div>
-         </div>
-         <!-- Diction: competitor analysis -->
-         <div>
-            <div>
-               <h2 id="competitoranalysis">Competitive anlaysis</h2>
-            </div>
-            <!-- Diction: competitor analysis:Quizlet -->
-            <div>
-               <div>
-                  <h3>Quizlet</h3>
-                  <div>
-                     <picture>
-                        <source srcset="img/mobile/diction/ca.quizlet.1x.jpg" media="(max-width:767px)">
-                        <img src="img/desktop/diction/ca.quizlet.2x.jpg" alt="Competitive anlaysis:Quizlet">
-                     </picture>
-                     <div>
-                        <div>
-                           <h4>pros</h4>
-                           <ul>
-                              <li>Clean organization makes users easy to follow/use the app </li>
-                              <li>Simple survey introduction in order to connect the user with the other users who have taken the same study courses and already created a set of words to study. This maximizes the efficiency in studying and network among the school peers.</li>
-                              <li>Different users could collaborate in editing a set of words, fixing mistakes, and adding more information.</li>
-                              <li>Different tools, such as flashcards, quizzes, and games with other users, keep the users engaged and spend more time on the app.</li>
-                              <li>Personalized flashcards and network will make the user become more loyal to the application because the users wouldn't want to lose the data.</li>
-                           </ul>
-                        </div>
-                        <div>
-                           <h4>cons</h4>
-                           <ul>
-                              <li>Too many tools all together on one page could confuse the users when the users are just starting to use the app.</li>
-                              <li>Users must create an account with an email in order to use the application. Some users who don't want to type in personal information could be distracted by this feature.</li>
-                              <li>On one page, the distinction between the word and the definition is clear but on the other pages, there is no clear distinction between the word and the definition on the flashcard which could confuse the users when studying the words.</li>
-                              <li>The transition is often lagging when the user tries to slide the flashcard to view the next flashcard because the app is confused whether the user is trying to flip the card or slide the card.</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Diction: competitor analysis:Word of the day -->
-               <div>
-                  <h3>Quizlet</h3>
-                  <div>
-                     <picture>
-                        <source srcset="img/mobile/diction/ca.vocabulary.1x.jpg" media="(max-width:767px)">
-                        <img src="img/desktop/diction/ca.vocabulary.2x.jpg" alt="Competitive anlaysis:Vocabulary">
-                     </picture>
-                     <div>
-                        <div>
-                           <h4>pros</h4>
-                           <ul>
-                              <li>Smooth animated transitions</li>
-                              <li>Quick, simple survey introduction to personalize the vocabulary</li>
-                              <li>Trendy fonts and illustrations that would grab attention from the young audience</li>
-                              <li>A lot of negative space emphasizes the word and its definition</li>
-                              <li>Vocabulary list can be categorized by different topics such as society, the human body, and medical.</li>
-                              <li>Vocabulary words in other languages are also available.</li>
-                           </ul>
-                        </div>
-                        <div>
-                           <h4>cons</h4>
-                           <ul>
-                              <li>The free trial only lasts for 3 days</li>
-                              <li>Application doesn't contain enough tools to have users pay so much when there are other free vocab learning apps such as Quizlet.</li>
-                              <li>Lacks content variety. Other than the customizable visuals of the application, this application doesn't have any other tools to train users to memorize the vocab. The customizable background tool seems unnecessary.</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Diction:user Research -->
-         <div>
-            <div>
-               <h2 id="userresearch">User Research</h2>
-            </div>
-            <div>
-               <picture>
+         </div><!--CA:end -->
+         <div class="container"><!-- UR:start -->
+          <h2>2 User Research</h2>
+          <div>
+          <picture>
                   <source srcset="img/mobile/diction/interviews.1x.png" media="(max-width:767px)">
                   <img src="img/desktop/diction/interviews.2x.png" alt="User Interviews">
-               </picture>
-            </div>
+          </picture>
+          </div>
          </div>
-         <!-- Diction:personas -->
-         <div>
-            <div>
-               <h2 id="persona">Persona</h2>
-            </div>
-            <div>
+         <div class="diction-persona"><!-- Persona:Start -->
+          <h2 class="center">3 Persona</h2>
+          <div>
                <picture>
                   <source srcset="img/mobile/diction/persona.1x.png" media="(max-width:767px)">
                   <img src="img/desktop/diction/persona.2x.png" alt="Persona:Lily">
                </picture>
-               <p>Problem statement: Liliac needs to build a regular studying routine to improve her English and get better at understanding English in different accents because she struggles with understanding the students with strong accents and making casual conversations with people in English. We will know this to be true when she makes daily check-ins on the app every day and regularly takes vocabulary tests to validate her progress in her test scores.</p>
-               <p>Hypothesis statement: We believe that by creating a vocab learning app where the users conversate with A.I. that could talk back in an accent of user's choice so that the users could become more familiarized with different accents and improve their listening skills, we will achieve having Lilac getting more confident and better at making casual conversations with other people in English.
-               <p>
-            </div>
+               <div>
+               <p><span>Problem statement:</span> Liliac needs to build a regular studying routine to improve her English and get better at understanding English in different accents because she struggles with understanding the students with strong accents and making casual conversations with people in English. We will know this to be true when she makes daily check-ins on the app every day and regularly takes vocabulary tests to validate her progress in her test scores.</p>
+               <p><span>Hypothesis statement:</span> We believe that by creating a vocab learning app where the users conversate with A.I. that could talk back in an accent of user's choice so that the users could become more familiarized with different accents and improve their listening skills, we will achieve having Lilac getting more confident and better at making casual conversations with other people in English.</p>
+              </div>
+          </div>
          </div>
-         <!-- Diction:User Flow -->
+         <div class="diction-userflow"><!--User Flow:start -->
+         <h2 class="center">4 User Flow</h2>
          <div>
-            <div>
-               <h2 id="userflow">User Flow</h2>
-            </div>
-            <div>
-               <p>Task Analysis: Create a new collection of vocabulary flashcards</p>
-               <p>Entry Point: Home Screen</p>
-               <p>Success Criteria: Create a collection of vocabulary flashcards to study</p>
+               <div class="row-noborder">
+               <p><span>Task Analysis:</span> Create a new collection of vocabulary flashcards</p>
+               <p><span>Entry Point:</span> Home Screen</p>
+               <p><span>Success Criteria:</span> Create a collection of vocabulary flashcards to study</p>
+               </div>
+               <div id="left" >
                <ol>
                   <li>Log in</li>
                   <li>Select the 'Add' icon in the navigation bar</li>
@@ -213,20 +203,17 @@
                   <li>Create as many vocabulary flashcards as desired</li>
                   <li>Select 'Save the collection' to save the collection</li>
                </ol>
-            </div>
-            <div>
-               <picture>
-                  <source srcset="img/mobile/diction/userflow.1x.png" media="(max-width:767px)">
-                  <img src="img/desktop/diction/userflow.2x.jpg" alt="User Flow:Lily">
-               </picture>
-            </div>
-         </div>
-         <!-- Diction:Prototyping and Wireframing-->
-         <div>
-            <div>
-               <h2 id="wireframingandprototyping">Wireframing and Prototyping</h2>
-            </div>
-            <div>
+              </div>
+        </div>
+        <div>
+        <picture>
+            <source srcset="img/mobile/diction/userflow.1x.png" media="(max-width:767px)">
+            <img src="img/desktop/diction/userflow.2x.jpg" alt="User Flow:Lily">
+        </picture>
+        </div>
+        </div>
+        <div class="container"><!--Prototyping and Wireframing-->
+        <h2>5 Wireframes</h2>
                <div>
                   <h3>Low-fidelity wireframes</h3>
                   <picture>
@@ -234,19 +221,18 @@
                      <img src="img/desktop/diction/lofi.2x.jpg" alt="Lo-fi Wireframes">
                   </picture>
                </div>
-               <div>
-                  <h3>High-fidelity Wireframes</h3>
-                  <picture>
-                     <source srcset="img/mobile/diction/hifi.1x.jpg" media="(max-width:767px)">
-                     <img src="img/desktop/diction/hifi.2x.jpg" alt="Hi-fi Wireframes">
-                  </picture>
-               </div>
-            </div>
-         </div>
-         <!-- Diction:Usability Testing-->
-         <div>
+        </div>
+        <div><!--hifi:wireframes "need to be separated from class"container" because it will take the full width"-->
+          <h3 class="center">High-fidelity Wireframes</h3>
+          <picture>
+             <source srcset="img/mobile/diction/hifi.1x.jpg" media="(max-width:767px)">
+             <img src="img/desktop/diction/hifi.2x.jpg" alt="Hi-fi Wireframes">
+          </picture>
+        </div>
+         <div class="container"><!--Usability Testing-->
             <div>
-               <h2 id="usabilitytesting">Usability Testings</h2>
+               <h2>7 Usability Testings</h2>
+               <a href="" download>+Test Plan</a>
             </div>
             <div>
                <h3>Usability Test Report</h3>
@@ -257,7 +243,7 @@
             </div>
             <div>
                <h3>Revisions Needed</h3>
-               <ul>
+               <ol id="left">
                   <li>Insert LOG IN logos (Facebook / Google / Apple)</li>
                   <li>Separate word reminder notification (notification allowance)</li>
                   <li>Make the 'SAVE' button darker</li>
@@ -266,54 +252,59 @@
                   <li>Get rid of the (library/profile/setting)sub-menu error</li>
                   <li>Remove the Glob icon during the 'creating a new flashcard' process</li>
                   <li>Make the word reminder setting easier to find</li>
-               </ul>
+               </ol>
             </div>
+            <a href=""> Link to the final Prototype </a>
          </div>
-         <!-- Diction:What I would do differently next time-->
+         <div class="empty">
+         </div>
+         <div class="conclusion"><!--conclusion-->
          <div>
-            <div>
-               <h2>What I'd do differently next time</h2>
+               <h2>What I would do differently next time</h2>
                <ul>
-                  <li>Trust in the design process: don't stick to one idea at the beginning of the project.</li>
-                  <li>Move forward and seek advice from others fast; finishing on time is also a professional skill.No perfect design: I will never reach perfection but there's always a space to get better.</li>
-                  <li>A good foundation: listen to the data conducted from the research carefully Empathy: Empathize with the audience rather than merely studying them.</li>
+                  <li><span>Trust in the design process:</span> don't stick to one idea at the beginning of the project.</li>
+                  <li><span>Move forward and seek advice from others fast:</span> finishing on time is also a professional skill.No perfect design: I will never reach perfection but there's always a space to get better.</li>
+                  <li><span>A good foundation:</span> listen to the data conducted from the research carefully Empathy: Empathize with the audience rather than merely studying them.</li>
                   <li>Prepare for the several rounds of user testing for new ideas </li>
                   <li>Practice the technical skills for clear delivery and message </li>
                </ul>
-            </div>
          </div>
          <!-- Diction:Thank you-->
-         <div>
-            <div>
+
+            <div class="thankyou">
                <picture>
                   <source srcset="img/mobile/diction/thankyou.1x.png" media="(max-width:767px)">
                   <img src="img/desktop/diction/thankyou.2x.png" alt="Thank You">
                </picture>
             </div>
          </div>
-         </div>
+      </div>
       </main>
+
+
+
+
+
       <!-- For the footer  -->
       <footer id="contact">
          <div class="container">
-            <h3 class="center">Get in Touch</h3>
+           <div class="getintouch">
+            <h3>Get in Touch</h3>
             <p>Let’s start talking! Shoot me an email or shoot me a DM on any social media platform you feel comfortable with! You can find me as either @nicetomizzu or @mizzucho.</p>
-            <div class="center"><a href="mailto:mizzucho@gmail.com" class="button contact">Send Email</a></div>
+            </div>
+              <a href="mailto:mizzucho@gmail.com" class="button contact">Send Email</a>
+            </div>
 
-         </div>
-         <div class="socialmedia">
+            <div class="socialmedia">
+            <h3> Follow me on social media </h3>
             <!-- Linkedin  -->
-            <div>
-              <h3> Follow me on social media </h3>
             <a href="https://www.linkedin.com/in/mizzu-cho-983522178/" target="_blank">
                <svg height="100%" id="linkedin" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/>
                </g></g>
                </svg>
             </a>
-
             <!-- Instagram  -->
-
-            <a href="https://www.instagram.com.nicetomizzu" target="_blank">
+            <a href="https://www.instagram.com/whgprbs/" target="_blank">
                <svg enable-background="new 0 0 128 128" id="instagram" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="_x37__stroke">
                      <g id="Instagram_1_">
@@ -329,20 +320,15 @@
                   </g>
                </svg>
             </a>
-
             <!-- Behance  -->
-
             <a href="https://www.behance.net/mizzucho">
                <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="behance" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M38.031,27.257c-3.174,0-3.615,3.168-3.615,3.168h6.748C41.164,30.425,41.207,27.257,38.031,27.257z"/><path d="M22.721,30.425h-5.982v5.492h5.296c0.09,0,0.225,0.002,0.383,0c0.852-0.02,2.467-0.268,2.467-2.67   C24.885,30.396,22.721,30.425,22.721,30.425z"/><path d="M28.348,5.101c-13.6,0-24.625,11.023-24.625,24.623c0,13.6,11.025,24.625,24.625,24.625   c13.598,0,24.623-11.025,24.623-24.625C52.971,16.125,41.945,5.101,28.348,5.101z M33.531,20.231h8.477v2.53h-8.477V20.231z    M29.246,33.503c0,6.271-6.525,6.064-6.525,6.064h-5.982h-0.175h-4.535V19.021h4.535h0.175h5.982c3.248,0,5.812,1.794,5.812,5.47   c0,3.676-3.135,3.91-3.135,3.91C29.531,28.401,29.246,33.503,29.246,33.503z M45.104,33.167H34.457   c0,3.816,3.615,3.576,3.615,3.576c3.414,0,3.295-2.211,3.295-2.211h3.617c0,5.867-7.033,5.465-7.033,5.465   c-8.436,0-7.893-7.855-7.893-7.855s-0.008-7.893,7.893-7.893C46.268,24.249,45.104,33.167,45.104,33.167z"/><path d="M24.174,24.81c0-2.137-1.453-2.137-1.453-2.137h-0.77h-5.212v4.584h5.611C23.318,27.257,24.174,26.946,24.174,24.81z"/>
                </g></svg>
             </a>
-
-          </div>
          </div>
-         <div class="center">
             <p>Copyright Mizzu Cho 2022</p>
-         </div>
+          </div>
       </footer>
       <script src="js/scripts.js"></script>
    </body>
-</html>
+  </html>

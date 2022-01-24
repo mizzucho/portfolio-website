@@ -2,9 +2,12 @@
 Colors used:
 Primary Color for hyperlink (Blue): #05676e;
 Secondary Color for hyperlink (Green): #489c79;
-Primary Color (light green): #F6FCF7;
-Secondary Color (darker Green): #8AA08D;
-active test color: 26542C;
+white:#ffffff;
+black:#000000;
+Background color:#F6FCF7;
+Primary Button (darker green): #072E0C;
+Seconday Button (light Green): #8AA08D;
+active test color: 26542C/072E0C;
 */
 
 * {
@@ -19,27 +22,17 @@ body {
   color: #000000;
 }
 
-#contact {
-  background-color: #F6FCF7;
-}
-
-h1 {
-  line-height: 1.0;
-}
-
-h2, h3, h4 {
+h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
   font-size: 2em;
   font-weight: 700;
 }
-
 h2 {
   font-size: 1.8em;
   font-weight: 700;
 }
-
 h3 {
   font-size: 1.2em;
   font-weight: 700;
@@ -48,26 +41,24 @@ h4 {
   font-size: 1em;
   font-weight: 400;
 }
-
 img {
   width: 100%;
 }
-
 a {
   color: #000000;
   text-decoration: none; /* No underlining */
 }
-
 a:visited { /* visited link */
-  color: black;
+  color: #000000;
 }
+
 a:hover,
 a:focus {
-  color: #85D690;
+  color: #072E0C;
   text-decoration: underline;
 }
 a:active { /* selected link */
-  color: #26542C;
+  color: #072E0C;
 }
 
 .button {
@@ -81,18 +72,15 @@ a:active { /* selected link */
   transition-duration: 0.4s;
   transition-property: color;
 }
-
 .button:visited { /* visited link */
   color: #8AA08D;
 }
-
 .button:hover {
   background-color: #8AA08D;
   color:white;
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
 .button:active
 {
   color: #ffffff;
@@ -114,8 +102,18 @@ a:active { /* selected link */
   background-color: #072E0C;
   color: #ffffff;
 }
-
 .download-cv{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #26542C;
+  color: #ffffff;/* needed to override the default link color */
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #26542C; /* width of the border, type, color */
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+.download-cv:visited{
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #26542C;
   color: #ffffff;/* needed to override the default link color */
@@ -130,9 +128,7 @@ a:active { /* selected link */
   background-color: #F6FCF7;
   color:#26542C;
 }
-#hero {
-  text-align: center;
- }
+
 
 
 
@@ -144,61 +140,23 @@ a:active { /* selected link */
   max-width: 1200px;
   margin: 0 auto;
 }
-.socialmedia {
-  padding: 50px 15px;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-footer{
-  text-align: center;
-  padding:50px 20px;
-}
-footer h3 {
-  color:#26542C;
-}
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-#hero h1 {
-  padding-top: 20px;
-  width: 100%; /* Centers text */
-}
-#subtitle{
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 30px;
-}
-#work {
-  padding: 40px 0;
-}
-#work h2{
-  padding:30px;
-  color:#8AA08D;
-}
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #C1D2C3;
-}
-#diction {
-      padding-top: 20px;
-      border-top: 1px solid #C1D2C3;
-    }
-
 header {
   background-color: #F6FCF7;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
   box-shadow:0px 10px 5px 0px rgba(50, 50, 50, 0.4);
   position: fixed;
 }
-
+nav {
+  display: inline-block;
+  width: 100%;
+}
 .logo {
   max-width: 200px;
   text-align: center;
+  padding-bottom:5px;
 }
 nav > ul {
   list-style-type: none;
@@ -214,35 +172,66 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 nav > ul > li > a:visited{
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #8AA08D;
 }
 nav > ul > li > a:hover{
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #8DD990;
 }
 nav > ul > li > a:active{
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #26542C;
+  color: #8DD990;
 }
-nav {
-  display: inline-block;
-  width: 100%;
+main{
+  padding-top: 116.78px;
 }
 #hero {
   background-color: #F6FCF7;
   padding: 20px 0;
 }
-main, #project {
-  padding-top: 116.78px;
+#hero h1 {
+  padding-top: 20px;
+  width: 100%;
+  text-align:center; /* Centers text */
+}
+#hero span{
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+#work {
+  padding: 40px 0;
+  border-top: 1px solid #C1D2C3;
 }
 
+#work h2{
+  color:#8AA08D;
+}
+#work p{
+  text-align: left;
+  padding:0 10px;
+}
+.row {
+  padding:25px 0;
+  border-bottom: 1px solid #C1D2C3;
+}
+.row-noborder {
+  padding:25px 0;
+}
+.animation {
+  padding: 25px 0;
+}
+footer{
+  border-top:1px solid #C1D2C3;
+  background-color: #F6FCF7;
+  padding:30px 20px;
+}
+footer h3 {
+  color:#26542C;
+}
+.socialmedia {
+  padding: 50px 15px;
+  text-align: center;
+  max-width: 1200px;
+}
 #instagram {
   width: 40px;
   text-align: center;
@@ -261,12 +250,14 @@ main, #project {
 }
 
 
-/*about page styling */
-#about {
-  padding-top: 50px;
-  text-align: center;
-}
 
+
+
+/*about page styling */
+.about h1{
+  padding-top:20px;
+  color:#8AA08D;
+}
 #mystory p{
   text-align: left;
   padding-bottom: 10px;
@@ -274,71 +265,257 @@ main, #project {
 #mystory {
   padding-bottom: 20px;
 }
-
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-/*Home page styling */
-.container {
-  text-align: unset;
+#skillsandtools ul li {
+  list-style-type:none;
 }
-header {
-  text-align: unset;
-  padding: 20px 0 10px 20px;
-}
-nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-main, #project {
-    padding-top: 100px;
-  }
-.logo {
-    max-width: 180px;
-  }
-#hero {
-    font-size: 1.1em;
-  }
-footer {
-      font-size: 1.1em;
-      padding:60px 20px;
-    }
-
-.column.col-md-6.col-lg-7 {
-      width: 50%;
-    }
-.column.col-md-6.col-lg-5 {
-          width: 50%;
-        }
-[class*="col-"] {
-      float: left;
-      padding: 0 10px;
-    }
-.row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-#diction {
-      padding-top: 20px;
-      border-top: 1px solid #C1D2C3;
-    }
-.container {
-          padding: 10px 20px;
-          max-width: 950px;
-          margin: 0 auto;
-        }
-
-/*animation */
-#about-picture{
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+#skillsandtools ul {
+  padding:0;
 }
 
+
+
+
+
+/* Snapshot styling */
+  .snapshot {
+    padding-top: 150px;
+    color:#E57272;
+  }
+  .snapshot .empty{
+    padding:130px;
+  }
+  .snapshot-graphic-1{
+    padding:20px;
+  }
+  .snapshot-logo{
+    padding:50px 100px;
+    align-items: center;
+  }
+  .snapshot-row {
+    padding:10px 30px;
+    border-top: 1px solid #E57272;
+  }
+  .snapshot-row ul{
+  padding-inline-start: unset;
+  padding-left: 20px;
+  }
+  .snapshot-row ul li{
+  text-align: left;
+  padding:3px 0;
+  }
+  .snapshot h2, h3{
+    text-align:center;
+  }
+  .snapshot-statistic{
+    width:50%;
+    float:left;
+    padding:10px;
+  }
+  .snapshot-tools picture{
+    padding:0 5px;
+  }
+  #miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
+    width:16.66%;
+    display:inline-block;
+  }
+  #design-process .center{
+    border-top:1px solid #E57272;
+    padding:30px;
+  }
+  #design-process ol li{
+    list-style-type: none;
+  }
+    #design-process ol {
+    padding-inline-start: unset;
+  }
+/*understand*/
+  #ca-image{
+    padding: 10px 40px;
+  }
+  .interview{
+    padding:30px 0;
+  }
+  .interview span{
+    font-weight: 700;
+  }
+  #interview-image{
+    padding: 10px 40px;
+  }
+/*define*/
+ #persona-image{
+  padding: 0px 40px;
+ }
+ .user-journey{
+  padding:30px 0;
+ }
+ #user-journey-image{
+  padding: 0px 40px;
+ }
+ .user-flow{
+   padding:30px 0;
+ }
+ #user-flow-image{
+   padding: 0px 50px;
+ }
+ /*ideate*/
+ .card-sorting{
+padding:30px 0;
+ }
+ #card-sorting-image{
+   padding:0 40px;
+ }
+ .ia{
+  padding:30px 0;
+ }
+ #ia-image{
+   padding:0 40px;
+ }
+ /*prototype*/
+ #lofi-image{
+   padding: 10px 60px;
+ }
+ #hifi-image{
+    padding: 10px 100px;
+  }
+  .hifi{
+    padding:30px 0;
+  }
+  /*test*/
+.ab-testing{
+  padding:30px 0;
+}
+.button.design-system {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E57272;
+  color:white; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border:#F6D0D0;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+.button.design-system:visited { /* visited link */
+  color: white;
+}
+.button.design-system:hover {
+  background-color: #E57272;
+  color:white;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.design-system:active
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+.button.prototype {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E57272;
+  color:white; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border:#F6D0D0;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+.button.prototype:visited { /* visited link */
+  color: white;
+}
+.button.prototype:hover {
+  background-color: #E57272;
+  color:white;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.prototype:active
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+.button-padding{
+  padding:10px;
+}
+/*conclusion*/
+#conclusion{
+  padding:30px 5px;
+}
+#conclusion span{
+  font-weight: 700;
+}
+.snapshot main{
+  padding-bottom:50px;
+}
+
+
+
+
+
+
+  /* Diction styling */
+.diction{
+  padding-top: 150px;
+}
+.diction ul li {
+  text-align: left;
+}
+.table-of-content{
+  text-align: center;
+  padding:0;
+}
+.table-of-content ol li{
+  list-style-type: none;
+}
+.table-of-content ol {
+  padding-inline-start: unset;
+}
+#left{
+  text-align: left;
+  padding:20;
+}
+.thankyou{
+  padding:100px 0;
+}
+.diction-persona {
+  padding: 10px 15px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.diction-persona span{
+  font-weight: 700;
+}
+.diction-userflow {
+  padding: 10px 20px;
+  text-align: left;
+  max-width: 1200px;
+}
+.diction-userflow span{
+  font-weight: 700;
+}
+.conclusion{
+  border-top: 1px solid #8AA08D;
+  padding: 30px 20px;
+  text-align: left;
+  max-width: 1200px;
+}
+.conclusion h2{
+  text-align: center;
+  color:#8AA08D;
+}
+.conclusion span{
+  font-weight: 700;
+  color:#072E0C;
+}
+.conclusion ul{
+  padding:10px;
+}
+.empty{
+  padding:30px;
+}
+
+/*animation*/
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -361,27 +538,96 @@ footer {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-/*About page styling */
-#about h2{
-  text-align: center;
-  padding:5px 0;
-}
-.about-content{
-  padding-bottom: 100px;
-}
-.col-md-2 {
-      width: 22.5%;
-      padding-left:25px;
-      text-align: left;
+
+
+
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header .container {
+    text-align: unset;
+  }
+  .container {
+    padding: 10px 30px;
+  }
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+ .logo {
+    padding:10px 20px 0px 20px;
     }
-#skills-tools, #mystory {
-  float: left;
-  padding: 0 10px;
-  width: 50%;
-}
-.row {
-      margin: 20px 0; /* 25px top and bottom, 0 left and right */
+  main{
+        padding-top: 100px;
+      }
+  #hero span {
+      display: block;
     }
+[class*="col-"] {
+    float: left;
+    padding:10px;
+  }
+  .column.col-md-6.col-lg-7 {
+    width: 50%;
+  }
+  .column.col-md-6.col-lg-5{
+    width: 50%;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ .row-noborder::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+#work p{
+  text-align: left;
+  padding:0 20px;
+}
+#work .empty{
+  border-bottom: 1px solid #C1D2C3;
+}
+.getintouch{
+  padding: 10px 200px;
+}
+
+
+/*about page*/
+#mystory a{
+  padding:20px;
+}
+#mystory{
+  padding:20px 100px;
+}
+.column.col-6 {
+    width: 50%;
+}
+.empty{
+  padding:30px 100px;
+}
+#skillsandtools .empty{
+    border-top: 30px solid #C1D2C3;
+}
+#skillsandtools h2{
+  display:inline-block;
+}
+
+/*snapshot page*/
+
 
 }
 
@@ -389,55 +635,41 @@ footer {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-main, #project {
-      padding-top: 90px;
+  [class*="col-"] {
+      float: left;
+      padding:10px;
     }
-/*Home page styling */
-.container {
-          padding: 10px 20px;
-          max-width: 950px;
-          margin: 0 auto;
-        }
-#contact p {
-    text-align: center;
-    padding:0 120px;
-    padding-bottom: 10px;
-  }
-#hero {
-      font-size: 1.2em;
-    }
-footer {
-      background-color: #F6FCF7
-      padding:100px 20px;
+  main{
+        padding-top: 100px;
       }
-#diction {
-      padding-top: 20px;
-      border-top: 1px solid #C1D2C3;
-    }
-.column.col-md-6.col-lg-7 {
-          width: 58.33%;
-        }
-.column.col-md-6.col-lg-5 {
-          width: 41.66%;
-            }
-/*About page styling */
-
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1600px) {
-/*Home page styling */
-.container {
+  .column.col-md-6.col-lg-7 {
+            width: 58.33%;
+          }
+  .column.col-md-6.col-lg-5 {
+            width: 41.66%;
+              }
+  #work p{
+      text-align: left;
+      padding:0 20px;
+  }
+  .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-#diction {
-    padding-top: 20px;
-    border-top: 1px solid #C1D2C3;
-  }
-/*About page styling */
+/*about*/
+#mystory{
+  padding:20px 20px;
+}
+#skillsandtools{
+  padding:20px 20px;
+}
+
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
