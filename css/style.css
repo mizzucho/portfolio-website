@@ -60,7 +60,17 @@ a:focus {
 a:active { /* selected link */
   color: #072E0C;
 }
-
+.container-image{
+  padding: 10px 10px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.center-item{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: white;
@@ -131,8 +141,7 @@ a:active { /* selected link */
 
 
 
-
-/* Layout styling */
+/* Layout styling-small */
 .center {text-align: center;}
 .container {
   padding: 10px 15px;
@@ -228,32 +237,33 @@ footer h3 {
   color:#26542C;
 }
 .socialmedia {
-  padding: 50px 15px;
+  padding-top:50px;
+  padding-bottom:150px;
   text-align: center;
-  max-width: 1200px;
+
 }
 #instagram {
-  width: 40px;
+  width: 60px;
   text-align: center;
-  margin: 0 10px;
+  padding:0 10px;
 }
 #linkedin {
-  width: 40px;
-  margin: 0 10px;
+  width: 60px;
   text-align: center;
+  padding:0 10px;
 }
 #behance {
-  width: 45px;
-  margin: 0 5px;
-  position: relative;
-  top: 5px;
+  width: 60px;
+  text-align: center;
+  padding:0 10px;
+}
+.copyright{
+  text-align: center;
+  font-size: 12px;
 }
 
 
-
-
-
-/*about page styling */
+/*about styling-small */
 .about h1{
   padding-top:20px;
   color:#8AA08D;
@@ -274,22 +284,20 @@ footer h3 {
 
 
 
-
-
-/* Snapshot styling */
+/* Snapshot styling-small */
   .snapshot {
     padding-top: 150px;
     color:#E57272;
   }
-  .snapshot .empty{
-    padding:130px;
+
+  #problem-statement .snapshot-row{
+    border:none;
   }
-  .snapshot-graphic-1{
-    padding:20px;
+  #problem-statement{
+    padding:50px 0;
   }
-  .snapshot-logo{
-    padding:50px 100px;
-    align-items: center;
+  .snapshot-graphic1 .add-padding{
+    padding:50px 0;
   }
   .snapshot-row {
     padding:10px 30px;
@@ -311,6 +319,13 @@ footer h3 {
     float:left;
     padding:10px;
   }
+  .snapshot-logo{
+    text-align: center;
+    padding:10px;
+  }
+  #snapshot-logo{
+    width:100px;
+  }
   .snapshot-tools picture{
     padding:0 5px;
   }
@@ -328,7 +343,12 @@ footer h3 {
     #design-process ol {
     padding-inline-start: unset;
   }
-/*understand*/
+  #design-process ol li a{
+    color:#E57272;
+    text-decoration: underline;
+  }
+
+/*snapshot:understand-small*/
   #ca-image{
     padding: 10px 40px;
   }
@@ -357,7 +377,7 @@ footer h3 {
  #user-flow-image{
    padding: 0px 50px;
  }
- /*ideate*/
+ /*Snapshot:ideate-small*/
  .card-sorting{
 padding:30px 0;
  }
@@ -368,7 +388,7 @@ padding:30px 0;
   padding:30px 0;
  }
  #ia-image{
-   padding:0 40px;
+   padding:0 100px;
  }
  /*prototype*/
  #lofi-image{
@@ -380,7 +400,8 @@ padding:30px 0;
   .hifi{
     padding:30px 0;
   }
-  /*test*/
+  /*Snapshot:test-small*/
+
 .ab-testing{
   padding:30px 0;
 }
@@ -389,7 +410,7 @@ padding:30px 0;
   background-color: #E57272;
   color:white; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   border:#F6D0D0;
   transition-duration: 0.4s;
@@ -414,7 +435,7 @@ padding:30px 0;
   background-color: #E57272;
   color:white; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   border:#F6D0D0;
   transition-duration: 0.4s;
@@ -450,13 +471,14 @@ padding:30px 0;
 
 
 
-
-
-
-  /* Diction styling */
+  /* Diction styling-small */
 .diction{
   padding-top: 150px;
 }
+.diction h2{
+text-align:center;
+}
+
 .diction-row {
   padding:10px 10px;
   border-top: 1px solid #3A3A3A;
@@ -473,20 +495,20 @@ padding:0 20px;
 text-align: left;
 padding:3px 0;
 }
-.diction ol li {
-  text-align: left;
-}
-.table-of-content{
+
+#diction-designprocess{
   border-top: 1px solid #3A3A3A;
   text-align: center;
-  padding:20px 0;
 }
-.table-of-content ol li{
+#diction-designprocess ol{
+
+  padding-inline-start:unset;
+}
+#diction-designprocess ol li{
   list-style-type: none;
+  text-decoration: underline;
 }
-.table-of-content ol {
-  padding-inline-start: unset;
-}
+
 .left{
   text-align: left;
 }
@@ -502,7 +524,7 @@ padding:3px 0;
 .diction-userflow {
   padding: 10px 20px;
   text-align: left;
-  max-width: 1200px;
+
 }
 .diction-userflow span{
   font-weight: 700;
@@ -565,11 +587,10 @@ padding:3px 0;
 }
 .conclusion h2{
   text-align: center;
-  color:#8AA08D;
+
 }
 .conclusion span{
   font-weight: 700;
-  color:#072E0C;
 }
 .conclusion ul {
   padding:20px;
@@ -584,7 +605,7 @@ padding:3px 0;
   padding:50px 0;
 }
 
-/*animation*/
+/*CSS:animation-small*/
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -614,16 +635,50 @@ padding:3px 0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   header .container {
     text-align: unset;
   }
   .container {
     padding: 10px 30px;
+    margin: 0 auto;
   }
+  .container-text{
+    padding: 50px 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .container-image{
+    padding: 10px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -671,11 +726,14 @@ Medium devices (640px and larger)
   border-bottom: 1px solid #C1D2C3;
 }
 .getintouch{
-  padding: 10px 200px;
+  padding: 60px 200px;
+}
+#contact .getintouch p{
+  padding: 10px 100px;
+  max-width: 1200px;
 }
 
-
-/*about page*/
+/*About-styling-medium*/
 #mystory a{
   padding:20px;
 }
@@ -695,7 +753,11 @@ Medium devices (640px and larger)
   display:inline-block;
 }
 
-/*snapshot page*/
+/*Snapshot-styling-medium*/
+
+.snapshot-graphic1 .add-padding{
+  padding:100px 0;
+}
 .snapshot .empty{
   padding:250px;
 }
@@ -726,23 +788,28 @@ padding-left: 100px;
 text-align: left;
 padding:3px 0;
 }
+.snapshot-subtitle{
+  padding: 20px 100px;
+  font-weight: 500;
+}
 .snapshot-tools{
-  padding:0 100px;
+  padding:0 130px 30px 130px;
   text-align: center;
 }
 .snapshot-tools picture{
-  padding:0 5px;
+  padding:0 10px;
 }
 #miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
   width:10%;
   display:inline-block;
 }
-/*understand*/
+
+/*Snapshot:understand-medium*/
 .ca{
-  padding:100px 0;
+  padding:200px 0;
 }
 #ca-image{
-  padding: 10px 100px;
+  padding: 10px 150px;
 }
 .interview{
   padding:100px 0;
@@ -750,7 +817,7 @@ padding:3px 0;
 #interview-image{
   padding: 10px 100px;
 }
-/*define*/
+/*Snapshot:define-medium*/
 .persona{
   padding:100px 0;
 }
@@ -769,7 +836,7 @@ padding: 0px 300px;
 #user-flow-image{
  padding: 0px 300px;
 }
-/*ideate*/
+/*Snpashot:ideate-medium*/
 .card-sorting{
 padding:100px 0;
 }
@@ -782,7 +849,7 @@ padding:100px 0;
 #ia-image{
  padding:0 300px;
 }
-/*prototype*/
+/*Snapshot:prototype-medium*/
 .lofi{
 padding:100px 0;
 }
@@ -795,6 +862,15 @@ padding:100px 0;
 #hifi-image{
   padding: 10px 100px;
 }
+/*Snapshot:test-*/
+#usability-testing .empty{
+  padding:90px;
+}
+.snapshot-row .container-image{
+  padding: 50px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .ab-testing{
 padding:100px 0;
 }
@@ -804,7 +880,12 @@ padding:100px 0;
 .snapshot-buttons{
   padding: 50px 0;
 }
-
+.button-padding{
+  padding: 20px 0;
+}
+#refineanditerate-image{
+  padding:150px;
+}
 
 
 /*diction styling:large*/
@@ -818,34 +899,18 @@ padding:100px 0;
 padding-inline-start: unset;
 padding:0 20px;
 }
-.diction-row ol li{
-text-align: left;
-padding:3px 0;
-}
-.diction ol li {
-  text-align: left;
-}
-.table-of-content{
-  border-top: 1px solid #3A3A3A;
-  text-align: center;
-  padding:20px 20px;
-}
-.table-of-content ol li{
-  list-style-type: none;
-  text-align: center;
-}
-.table-of-content ol {
-  padding-inline-start: unset;
-}
 
+.diction-twocolumnsrow{
+  padding: 50px 100px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 #diction-persona-image {
   padding: 100px;
 }
-.diction-personap{
+.diction-persona{
   padding:20px 0;
-}
-.diction.revision-needed{
-  padding:100px 200px;
 }
 .diction.prototyp.position{
   text-align: center;
@@ -855,10 +920,11 @@ padding:3px 0;
   border-top: 1px solid #8AA08D;
   padding: 200px 250px;
   text-align: left;
-  max-width: 1200px;
 }
 .thankyou{
-  padding:250px 0;
+  padding: 200px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 }
 
@@ -883,11 +949,6 @@ Large devices (1024px or larger)
       text-align: left;
       padding:0 20px;
   }
-  .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 /*about*/
 #mystory{
   padding:20px 20px;
