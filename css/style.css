@@ -138,7 +138,13 @@ align-items: center;
   background-color: #F6FCF7;
   color:#26542C;
 }
-
+.next-project {
+  padding: 30px 50px;
+  text-align: right;
+}
+.button.next-project{
+  border:none;
+}
 
 
 /* Layout styling-small */
@@ -248,7 +254,9 @@ nav > ul {
   padding:25px 0;
 }
 .animation {
-  padding: 25px 0;
+ max-width: 700px;
+ padding: 20px 0;
+ margin:0 auto;
 }
 footer{
   border-top:1px solid #C1D2C3;
@@ -691,7 +699,7 @@ Medium devices (640px and larger)
     margin: 0 auto;
   }
   .container-text{
-    padding: 50px 200px;
+    padding: 0px 200px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -760,6 +768,11 @@ Medium devices (640px and larger)
 #work .empty{
   border-bottom: 1px solid #C1D2C3;
 }
+.animation {
+ max-width: 700px;
+ padding: 100px 0;
+ margin:0 auto;
+}
 .getintouch{
   padding: 60px 200px;
 }
@@ -809,15 +822,15 @@ Medium devices (640px and larger)
   width:200px;
 }
 .snapshot-row {
-  padding:50px 100px;
+  padding:50px 50px;
   border-top: 1px solid #E57272;
 }
 .snapshot-row p{
-  padding: 0 100px;
+  padding: 0 40px;
 }
 .snapshot-row ul{
 padding-inline-start: unset;
-padding-left: 100px;
+padding-left: 50px;
 }
 .snapshot-row ul li{
 text-align: left;
@@ -840,17 +853,18 @@ padding:3px 0;
 }
 
 /*Snapshot:understand-medium*/
+
 .ca{
-  padding:200px 0;
+  padding:150px 0;
 }
 #ca-image{
-  padding: 10px 150px;
+  padding: 0px 250px;
 }
 .interview{
   padding:100px 0;
 }
 #interview-image{
-  padding: 10px 100px;
+  padding: 0px 250px;
 }
 /*Snapshot:define-medium*/
 .persona{
@@ -980,9 +994,20 @@ Large devices (1024px or larger)
   .column.col-md-6.col-lg-5 {
             width: 41.66%;
               }
+
   #work p{
       text-align: left;
       padding:0 20px;
+  }
+  .container-text{
+    padding: 10px 200px 50px 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .container-image{
+    padding: 10px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 /*about*/
 #mystory{
@@ -990,6 +1015,144 @@ Large devices (1024px or larger)
 }
 #skillsandtools{
   padding:20px 20px;
+}
+/*Snapshot-styling-large*/
+
+.snapshot-graphic1 .add-padding{
+  padding:100px 0;
+}
+.snapshot .empty{
+  padding:250px;
+}
+.snapshot-statistic{
+  width:50%;
+  float:center;
+  padding:70px 100px;
+}
+.snapshot-logo{
+  text-align: center;
+  padding:30px 0;
+}
+#snapshot-logo{
+  width:200px;
+}
+.snapshot-row {
+  padding:50px 100px;
+  border-top: 1px solid #E57272;
+}
+.snapshot-row p{
+  padding: 0 100px;
+}
+.snapshot-row ul{
+padding-inline-start: unset;
+padding-left: 100px;
+}
+.snapshot-row ul li{
+text-align: left;
+padding:3px 0;
+}
+.snapshot-subtitle{
+  padding: 20px 100px;
+  font-weight: 500;
+}
+.snapshot-tools{
+  padding:0 130px 30px 130px;
+  text-align: center;
+}
+.snapshot-tools picture{
+  padding:0 10px;
+}
+#miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
+  width:10%;
+  display:inline-block;
+}
+
+/*Snapshot:understand-large*/
+
+.ca{
+  padding:50px 0;
+}
+#ca-image{
+  padding: 0px 280px;
+}
+.interview{
+  padding:50px 0;
+}
+#interview-image{
+  padding: 0px 250px;
+}
+/*Snapshot:define-large*/
+.persona{
+  padding:50px 0;
+}
+#persona-image{
+padding: 0px 400px;
+}
+.user-journey{
+padding:50px 0;
+}
+#user-journey-image{
+padding: 0px 350px;
+}
+.user-flow{
+ padding:50px 0;
+}
+#user-flow-image{
+ padding: 0px 400px;
+}
+/*Snpashot:ideate-large*/
+.card-sorting{
+padding:100px 0;
+}
+#card-sorting-image{
+ padding:0 90px;
+}
+.ia{
+padding:50px 0;
+}
+#ia-image{
+ padding:0 400px;
+}
+/*Snapshot:prototype-large*/
+.lofi{
+padding:50px 0;
+}
+#lofi-image{
+ padding: 0px 100px;
+}
+.hifi{
+padding:50px 0;
+}
+#hifi-image{
+  padding: 0px 200px;
+}
+/*Snapshot:test-*/
+#usability-testing .empty{
+  padding:50px;
+}
+
+#usability-testing-image {
+  padding: 0px 50px;
+}
+.snapshot-row .container-image{
+  padding: 50px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ab-testing{
+padding:100px 0;
+}
+.snapshot main{
+  padding-bottom:300px;
+}
+.snapshot-buttons{
+  padding: 50px 0;
+}
+.button-padding{
+  padding: 20px 0;
+}
+#refineanditerate-image{
+  padding:250px;
 }
 
 }
