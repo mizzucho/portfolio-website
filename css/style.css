@@ -6,49 +6,61 @@ white:#ffffff;
 black:#000000;
 Background color:#F6FCF7;
 Primary Button (darker green): #072E0C;
-Seconday Button (light Green): #8AA08D;
+Seconday Button (light Green): #657C68;
 active test color: 26542C/072E0C;
 */
-
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 14px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2em;
   font-weight: 700;
 }
+
 h2 {
   font-size: 1.8em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.2em;
   font-weight: 700;
 }
+
 h4 {
   font-size: 1em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #000000;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #000000;
 }
 
@@ -57,45 +69,58 @@ a:focus {
   color: #072E0C;
   text-decoration: underline;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #072E0C;
 }
-.container-image{
+
+.container-image {
   padding: 10px 10px;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
 }
-.center-item{
+
+.center-item {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: white;
-  color:#8AA08D; /* needed to override the default link color */
+  color: #657C68;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid #8AA08D; /* width of the border, type, color */
+  border: 2px solid #657C68;
+  /* width of the border, type, color */
   transition-duration: 0.4s;
   transition-property: color;
 }
-.button:visited { /* visited link */
-  color: #8AA08D;
+
+.button:visited {
+  /* visited link */
+  color: #657C68;
 }
+
 .button:hover {
-  background-color: #8AA08D;
-  color:white;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  background-color: #657C68;
+  color: white;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button:active
-{
+
+.button:active {
   color: #ffffff;
   text-decoration: none;
 }
+
 .button.contact {
   background-color: #26542C;
   color: #F6FCF7;
@@ -104,606 +129,720 @@ align-items: center;
   transition-duration: 0.3s;
   transition-property: opacity;
 }
+
 .button.contact:hover {
   background-color: #26542C;
   color: #ffffff;
 }
+
 .button.contact:active {
   background-color: #072E0C;
   color: #ffffff;
 }
-.download-cv{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+
+.download-cv {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #26542C;
-  color: #ffffff;/* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 15px;
   border-radius: 10px;
-  border: 2px solid #26542C; /* width of the border, type, color */
+  border: 2px solid #26542C;
+  /* width of the border, type, color */
   transition-duration: 0.4s;
   transition-property: color;
 }
-.download-cv:visited{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+
+.download-cv:visited {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #26542C;
-  color: #ffffff;/* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 15px;
   border-radius: 10px;
-  border: 2px solid #26542C; /* width of the border, type, color */
+  border: 2px solid #26542C;
+  /* width of the border, type, color */
   transition-duration: 0.4s;
   transition-property: color;
 }
-.download-cv:hover{
+
+.download-cv:hover {
   background-color: #F6FCF7;
-  color:#26542C;
+  color: #26542C;
 }
+
 .next-project {
   padding: 30px 50px;
   text-align: right;
 }
-.button.next-project{
-  border:none;
+
+.button.next-project {
+  border: none;
 }
 
-
 /* Layout styling-small */
-.center {text-align: center;}
+.center {
+  text-align: center;
+}
+
 .container {
   padding: 10px 15px;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 header {
-  background-color: #F6FCF7;
-  padding: 10px 20px 10px 20px;
+  background-color: #f6fcf7;
+  padding: 10px 20px;
   display: inline-block;
   width: 100%;
-  box-shadow:0px 10px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0 10px 5px 0 rgba(50, 50, 50, 0.4);
   position: fixed;
 }
 
 .logo {
   max-width: 130px;
   text-align: left;
-  padding-top:7px;
+  padding-top: 7px;
 }
 
-
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #637966;
 }
-nav > ul > li > a:visited{
-  color: #8AA08D;
+
+nav>ul>li>a:visited {
+  color: #637966;
 }
-nav > ul > li > a:hover{
-  color: #8DD990;
+
+nav>ul>li>a:hover {
+  color: #637966;
 }
-nav > ul > li > a:active{
-  color: #8DD990;
+
+nav>ul>li>a:active {
+  color: #637966;
 }
-main{
+
+main {
   padding-top: 56px;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: 30px;
+  top: 20px;
   font-size: 20px;
   padding-right: 0;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
+
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #8AA08D;
+  border-top: 1px solid #8aa08d;
 }
-.navtoggle.responsive li:last-child  {
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 #hero {
-  background-color: #F6FCF7;
+  background-color: #f6fcf7;
   padding: 20px 0;
 }
+
 #hero h1 {
   padding-top: 20px;
   width: 100%;
-  text-align:center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
-#hero span{
+
+#hero span {
   font-family: 'Lora', serif;
   font-weight: 400;
   font-size: 20px;
 }
+
 #work {
   padding: 50px 0;
-  border-top: 1px solid #C1D2C3;
+  border-top: 1px solid #c1d2c3;
 }
 
-#work h2{
-  color:#8AA08D;
+#work h2 {
+  color: #657c68;
 }
-#work p{
+
+#work p {
   text-align: left;
-  padding:0 10px;
+  padding: 0 10px;
 }
-.row {
-  padding:25px 0;
-  border-bottom: 1px solid #C1D2C3;
-}
-.row-noborder {
-  padding:25px 0;
-}
-.animation {
- max-width: 700px;
- padding: 20px 0;
- margin:0 auto;
-}
-footer{
-  border-top:1px solid #C1D2C3;
-  background-color: #F6FCF7;
-  padding:30px 20px;
-}
-footer h3 {
-  color:#26542C;
-}
-.socialmedia {
-  padding-top:50px;
-  padding-bottom:150px;
-  text-align: center;
 
+.row {
+  padding: 25px 0;
+  border-bottom: 1px solid #c1d2c3;
 }
+
+.row-noborder {
+  padding: 25px 0;
+}
+
+.animation {
+  max-width: 700px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+footer {
+  border-top: 1px solid #c1d2c3;
+  background-color: #f6fcf7;
+  padding: 30px 20px;
+}
+
+footer h3 {
+  color: #26542c;
+}
+
+.socialmedia {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
 #instagram {
   width: 60px;
   text-align: center;
-  padding:0 10px;
+  padding: 0 10px;
 }
+
 #linkedin {
   width: 60px;
   text-align: center;
-  padding:0 10px;
+  padding: 0 10px;
 }
+
 #behance {
   width: 60px;
   text-align: center;
-  padding:0 10px;
+  padding: 0 10px;
 }
-.copyright{
+
+.copyright {
   text-align: center;
   font-size: 12px;
 }
 
-
 /*about styling-small */
-.about h1{
-  padding-top:20px;
-  color:#8AA08D;
+.about h1 {
+  padding-top: 20px;
+  color: #657c68;
 }
-#mystory p{
+
+#mystory p {
   text-align: left;
   padding-bottom: 10px;
 }
+
 #mystory {
   padding-bottom: 20px;
 }
+
 #skillsandtools ul li {
-  list-style-type:none;
+  list-style-type: none;
 }
+
 #skillsandtools ul {
-  padding:0;
+  padding: 0;
 }
-
-
 
 /* Snapshot styling-small */
-  .snapshot {
-    padding-top: 150px;
-    color:#E57272;
-  }
+.snapshot {
+  padding-top: 150px;
+  color: #E57272;
+}
 
-  #problem-statement .snapshot-row{
-    border:none;
-  }
-  #problem-statement{
-    padding:50px 0;
-  }
-  .snapshot-graphic1 .add-padding{
-    padding:50px 0;
-  }
-  .snapshot-row {
-    padding:10px 30px;
-    border-top: 1px solid #E57272;
-  }
-  .snapshot-row ul{
+#problem-statement .snapshot-row {
+  border: none;
+}
+
+#problem-statement {
+  padding: 50px 0;
+}
+
+.snapshot-graphic1 .add-padding {
+  padding: 50px 0;
+}
+
+.snapshot-row {
+  padding: 10px 30px;
+  border-top: 1px solid #e57272;
+}
+
+.snapshot-row ul {
   padding-inline-start: unset;
   padding-left: 20px;
-  }
-  .snapshot-row ul li{
+}
+
+.snapshot-row ul li {
   text-align: left;
-  padding:3px 0;
-  }
-  .snapshot h2, h3{
-    text-align:center;
-  }
-  .snapshot-statistic{
-    width:50%;
-    float:left;
-    padding:10px;
-  }
-  .snapshot-logo{
-    text-align: center;
-    padding:10px;
-  }
-  #snapshot-logo{
-    width:100px;
-  }
-  .snapshot-tools picture{
-    padding:0 5px;
-  }
-  #miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
-    width:16.66%;
-    display:inline-block;
-  }
-  #design-process .center{
-    border-top:1px solid #E57272;
-    padding:30px;
-  }
-  #design-process ol li{
-    list-style-type: none;
-  }
-    #design-process ol {
-    padding-inline-start: unset;
-  }
-  #design-process ol li a{
-    color:#E57272;
-    text-decoration: underline;
-  }
+  padding: 3px 0;
+}
+
+.snapshot h2, h3 {
+  text-align: center;
+}
+
+.snapshot-statistic {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.snapshot-logo {
+  text-align: center;
+  padding: 10px;
+}
+
+#snapshot-logo {
+  width: 100px;
+}
+
+.snapshot-tools picture {
+  padding: 0 5px;
+}
+
+#miro,
+#usabilityhub,
+#figma,
+#googleform,
+#optimalworkshop {
+  width: 16.66%;
+  display: inline-block;
+}
+
+#design-process .center {
+  border-top: 1px solid #E57272;
+  padding: 30px;
+}
+
+#design-process ol li {
+  list-style-type: none;
+}
+
+#design-process ol {
+  padding-inline-start: unset;
+}
+
+#design-process ol li a {
+  color: #E57272;
+  text-decoration: underline;
+}
 
 /*snapshot:understand-small*/
-  #ca-image{
-    padding: 10px 40px;
-  }
-  .interview{
-    padding:30px 0;
-  }
-  .interview span{
-    font-weight: 700;
-  }
-  #interview-image{
-    padding: 10px 40px;
-  }
-/*define*/
- #persona-image{
-  padding: 0px 40px;
- }
- .user-journey{
-  padding:30px 0;
- }
- #user-journey-image{
-  padding: 0px 40px;
- }
- .user-flow{
-   padding:30px 0;
- }
- #user-flow-image{
-   padding: 0px 50px;
- }
- /*Snapshot:ideate-small*/
- .card-sorting{
-padding:30px 0;
- }
- #card-sorting-image{
-   padding:0 40px;
- }
- .ia{
-  padding:30px 0;
- }
- #ia-image{
-   padding:0 100px;
- }
- /*prototype*/
- #lofi-image{
-   padding: 10px 60px;
- }
- #hifi-image{
-    padding: 10px 100px;
-  }
-  .hifi{
-    padding:30px 0;
-  }
-  /*Snapshot:test-small*/
+#ca-image {
+  padding: 10px 40px;
+}
 
-.ab-testing{
-  padding:30px 0;
+.interview {
+  padding: 30px 0;
 }
-.button.design-system {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E57272;
-  color:white; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 20px;
-  border-radius: 10px;
-  border:#F6D0D0;
-  transition-duration: 0.4s;
-  transition-property: color;
-}
-.button.design-system:visited { /* visited link */
-  color: white;
-}
-.button.design-system:hover {
-  background-color: #E57272;
-  color:white;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-.button.design-system:active
-{
-  color: #ffffff;
-  text-decoration: none;
-}
-.button.prototype {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E57272;
-  color:white; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 20px;
-  border-radius: 10px;
-  border:#F6D0D0;
-  transition-duration: 0.4s;
-  transition-property: color;
-}
-.button.prototype:visited { /* visited link */
-  color: white;
-}
-.button.prototype:hover {
-  background-color: #E57272;
-  color:white;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-.button.prototype:active
-{
-  color: #ffffff;
-  text-decoration: none;
-}
-.button-padding{
-  padding:10px;
-}
-/*conclusion*/
-#conclusion{
-  padding:30px 5px;
-}
-#conclusion span{
+
+.interview span {
   font-weight: 700;
 }
-.snapshot main{
-  padding-bottom:50px;
+
+#interview-image {
+  padding: 10px 40px;
 }
 
+/*define*/
+#persona-image {
+  padding: 0 40px;
+}
 
+.user-journey {
+  padding: 30px 0;
+}
 
-  /* Diction styling-small */
-.diction{
+#user-journey-image {
+  padding: 0 40px;
+}
+
+.user-flow {
+  padding: 30px 0;
+}
+
+#user-flow-image {
+  padding: 0 50px;
+}
+
+/*Snapshot:ideate-small*/
+.card-sorting {
+  padding: 30px 0;
+}
+
+#card-sorting-image {
+  padding: 0 40px;
+}
+
+.ia {
+  padding: 30px 0;
+}
+
+#ia-image {
+  padding: 0 100px;
+}
+
+/*prototype*/
+#lofi-image {
+  padding: 10px 60px;
+}
+
+#hifi-image {
+  padding: 10px 100px;
+}
+
+.hifi {
+  padding: 30px 0;
+}
+
+/*Snapshot:test-small*/
+.ab-testing {
+  padding: 30px 0;
+}
+
+.button.design-system {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #e57272;
+  color: white;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 10px;
+  border: #f6d0d0;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+
+.button.design-system:visited {
+  /* visited link */
+  color: white;
+}
+
+.button.design-system:hover {
+  background-color: #e57272;
+  color: white;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.design-system:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button.prototype {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #e57272;
+  color: white;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 10px;
+  border: #f6d0d0;
+  transition-duration: 0.4s;
+  transition-property: color;
+}
+
+.button.prototype:visited {
+  /* visited link */
+  color: white;
+}
+
+.button.prototype:hover {
+  background-color: #e57272;
+  color: white;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.prototype:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-padding {
+  padding: 10px;
+}
+
+/*conclusion*/
+.snapshot-conclusion {
+  padding: 30px 5px;
+}
+
+.snapshot-conclusion span {
+  font-weight: 700;
+}
+
+.snapshot main {
+  padding-bottom: 50px;
+}
+
+/* Diction styling-small */
+.diction {
   padding-top: 150px;
 }
-.diction h2{
-text-align:center;
+
+.diction h2 {
+  text-align: center;
 }
 
 .diction-row {
-  padding:10px 10px;
+  padding: 10px 10px;
   border-top: 1px solid #3A3A3A;
-  text-align:left;
-}
-.diction h4{
-  text-align: center;
-}
-.diction-row ol{
-padding-inline-start: unset;
-padding:0 20px;
-}
-.diction-row ol li{
-text-align: left;
-padding:3px 0;
+  text-align: left;
 }
 
-#diction-designprocess{
-  border-top: 1px solid #3A3A3A;
+.diction h4 {
   text-align: center;
 }
-#diction-designprocess ol{
 
-  padding-inline-start:unset;
+.diction-row ol {
+  padding-inline-start: unset;
+  padding: 0 20px;
 }
-#diction-designprocess ol li{
+
+.diction-row ol li {
+  text-align: left;
+  padding: 3px 0;
+}
+
+#diction-designprocess {
+  border-top: 1px solid #3a3a3a;
+  text-align: center;
+}
+
+#diction-designprocess ol {
+  padding-inline-start: unset;
+}
+
+#diction-designprocess ol li {
   list-style-type: none;
   text-decoration: underline;
 }
 
-.left{
+.left {
   text-align: left;
 }
+
 .diction-persona {
   padding: 10px 15px;
   text-align: left;
   max-width: 1200px;
   margin: 0 auto;
 }
-.diction-persona span{
+
+.diction-persona span {
   font-weight: 700;
 }
+
 .diction-userflow {
   padding: 10px 20px;
   text-align: left;
-
 }
-.diction-userflow span{
+
+.diction-userflow span {
   font-weight: 700;
 }
+
 .button.diction-testplan {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #C4C4C4;
-  color:white; /* needed to override the default link color */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #c4c4c4;
+  color: white;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
-  border:none;
+  border: none;
   transition-duration: 0.4s;
   transition-property: color;
 }
-.button.diction-testplan:visited { /* visited link */
+
+.button.diction-testplan:visited {
+  /* visited link */
   color: white;
 }
+
 .button.diction-testplan:hover {
-  background-color: #C4C4C4;
-  color:white;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  background-color: #c4c4c4;
+  color: white;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button.diction-testplan:active
-{
+
+.button.diction-testplan:active {
   color: white;
   text-decoration: none;
 }
+
 .button.diction-prototype {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #C4C4C4;
-  color:white; /* needed to override the default link color */
+  color: white;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 20px;
   border-radius: 10px;
-  border:none;
+  border: none;
   transition-duration: 0.4s;
   transition-property: color;
 }
-.button.diction-prototype:visited { /* visited link */
+
+.button.diction-prototype:visited {
+  /* visited link */
   color: white;
 }
+
 .button.diction-prototype:hover {
-  background-color: #C4C4C4;
-  color:white;
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  background-color: #c4c4c4;
+  color: white;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button.diction-prototype:active
-{
+
+.button.diction-prototype:active {
   color: white;
   text-decoration: none;
 }
-.conclusion{
-  border-top: 1px solid #8AA08D;
+
+.conclusion {
+  border-top: 1px solid #8aa08d;
   padding: 10px 20px;
   text-align: left;
   max-width: 1200px;
 }
-.conclusion h2{
-  text-align: center;
 
+.conclusion h2 {
+  text-align: center;
 }
-.conclusion span{
+
+.conclusion span {
   font-weight: 700;
 }
+
 .conclusion ul {
-  padding:20px;
+  padding: 20px;
 }
-.conclusion ul li{
-  padding:5px 0;
+
+.conclusion ul li {
+  padding: 5px 0;
 }
-.empty{
-  padding:30px;
+
+.empty {
+  padding: 30px;
 }
-.thankyou{
-  padding:50px 0;
+
+.thankyou {
+  padding: 50px 0;
 }
 
 /*CSS:animation-small*/
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   header .container {
     text-align: unset;
   }
+
   .container {
     padding: 10px 30px;
     margin: 0 auto;
   }
-  .container-text{
-    padding: 0px 200px;
+
+  .container-text {
+    padding: 0 200px;
     max-width: 1200px;
     margin: 0 auto;
   }
-  .container-image{
+
+  .container-image {
     padding: 10px 100px;
     max-width: 1200px;
     margin: 0 auto;
@@ -713,268 +852,325 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  nav > ul {
-  margin: 1em 0;
-}
-  nav > ul > li {
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
- .logo {
-     max-width: 170px;
-    padding:10px 20px 0px 20px;
-    }
-  main{
-        padding-top: 100px;
-      }
-  #hero span {
-      display: block;
-    }
-[class*="col-"] {
-    float: left;
-    padding:10px;
+    display: inline-block;
   }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .logo {
+    max-width: 170px;
+    padding: 10px 20px 0;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
   .column.col-md-6.col-lg-7 {
     width: 50%;
   }
-  .column.col-md-6.col-lg-5{
+
+  .column.col-md-6.col-lg-5 {
     width: 50%;
   }
+
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
- .row-noborder::after {
- content: "";
- clear: both;
- display: table;
-}
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-#work p{
-  text-align: left;
-  padding:0 20px;
-}
-#work .empty{
-  border-bottom: 1px solid #C1D2C3;
-}
-.animation {
- max-width: 700px;
- padding: 100px 0;
- margin:0 auto;
-}
-.getintouch{
-  padding: 60px 200px;
-}
-#contact .getintouch p{
-  padding: 10px 100px;
-  max-width: 1200px;
-}
+  .row-noborder::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-/*About-styling-medium*/
-#mystory a{
-  padding:20px;
-}
-#mystory{
-  padding:20px 100px;
-}
-.column.col-6 {
+  #work p {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  #work .empty {
+    border-bottom: 1px solid #c1d2c3;
+  }
+
+  .animation {
+    max-width: 700px;
+    padding: 100px 0;
+    margin: 0 auto;
+  }
+
+  .getintouch {
+    padding: 60px 100px;
+  }
+
+  #contact .getintouch p {
+    padding: 10px 20px;
+    max-width: 1200px;
+  }
+
+  /*About-styling-medium*/
+  #mystory a {
+    padding: 20px;
+  }
+
+  #mystory {
+    padding: 20px 50px;
+  }
+
+  .column.col-6 {
     width: 50%;
-}
-.empty{
-  padding:30px 100px;
-}
-#skillsandtools .empty{
-    border-top: 30px solid #C1D2C3;
-}
-#skillsandtools h2{
-  display:inline-block;
-}
+  }
 
-/*Snapshot-styling-medium*/
+  .empty {
+    padding: 30px 100px;
+  }
 
-.snapshot-graphic1 .add-padding{
-  padding:100px 0;
-}
-.snapshot .empty{
-  padding:250px;
-}
-.snapshot-statistic{
-  width:50%;
-  float:center;
-  padding:70px 100px;
-}
-.snapshot-logo{
-  text-align: center;
-  padding:30px 0;
-}
-#snapshot-logo{
-  width:200px;
-}
-.snapshot-row {
-  padding:50px 50px;
-  border-top: 1px solid #E57272;
-}
-.snapshot-row p{
-  padding: 0 40px;
-}
-.snapshot-row ul{
-padding-inline-start: unset;
-padding-left: 50px;
-}
-.snapshot-row ul li{
-text-align: left;
-padding:3px 0;
-}
-.snapshot-subtitle{
-  padding: 20px 100px;
-  font-weight: 500;
-}
-.snapshot-tools{
-  padding:0 130px 30px 130px;
-  text-align: center;
-}
-.snapshot-tools picture{
-  padding:0 10px;
-}
-#miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
-  width:10%;
-  display:inline-block;
-}
+  #skillsandtools .empty {
+    border-top: 30px solid #c1d2c3;
+  }
 
-/*Snapshot:understand-medium*/
+  #skillsandtools h2 {
+    display: inline-block;
+  }
 
-.ca{
-  padding:150px 0;
-}
-#ca-image{
-  padding: 0px 250px;
-}
-.interview{
-  padding:100px 0;
-}
-#interview-image{
-  padding: 0px 250px;
-}
-/*Snapshot:define-medium*/
-.persona{
-  padding:100px 0;
-}
-#persona-image{
-padding: 0px 300px;
-}
-.user-journey{
-padding:100px 0;
-}
-#user-journey-image{
-padding: 0px 300px;
-}
-.user-flow{
- padding:100px 0;
-}
-#user-flow-image{
- padding: 0px 300px;
-}
-/*Snpashot:ideate-medium*/
-.card-sorting{
-padding:100px 0;
-}
-#card-sorting-image{
- padding:0 90px;
-}
-.ia{
-padding:100px 0;
-}
-#ia-image{
- padding:0 300px;
-}
-/*Snapshot:prototype-medium*/
-.lofi{
-padding:100px 0;
-}
-#lofi-image{
- padding: 10px 60px;
-}
-.hifi{
-padding:100px 0;
-}
-#hifi-image{
-  padding: 10px 100px;
-}
-/*Snapshot:test-*/
-#usability-testing .empty{
-  padding:90px;
-}
-.snapshot-row .container-image{
-  padding: 50px 10px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.ab-testing{
-padding:100px 0;
-}
-.snapshot main{
-  padding-bottom:300px;
-}
-.snapshot-buttons{
-  padding: 50px 0;
-}
-.button-padding{
-  padding: 20px 0;
-}
-#refineanditerate-image{
-  padding:150px;
-}
+  /*Snapshot-styling-medium*/
+  .snapshot-graphic1 .add-padding {
+    padding: 100px 0;
+  }
 
+  .snapshot .empty {
+    padding: 250px;
+  }
 
-/*diction styling:large*/
+  .snapshot-statistic {
+    width: 50%;
+    padding: 70px 100px;
+  }
 
-.diction-row {
-  padding:50px 100px;
-  border-top: 1px solid #3A3A3A;
-}
+  .snapshot-logo {
+    text-align: center;
+    padding: 30px 0;
+  }
 
-.diction-row ol{
-padding-inline-start: unset;
-padding:0 20px;
-}
+  #snapshot-logo {
+    width: 200px;
+  }
 
-.diction-twocolumnsrow{
-  padding: 50px 100px;
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-#diction-persona-image {
-  padding: 100px;
-}
-.diction-persona{
-  padding:20px 0;
-}
-.diction.prototyp.position{
-  text-align: center;
-  padding:20px auto;
-}
-.conclusion{
-  border-top: 1px solid #8AA08D;
-  padding: 200px 250px;
-  text-align: left;
-}
-.thankyou{
-  padding: 200px 100px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  .snapshot-row {
+    padding: 50px;
+    border-top: 1px solid #e57272;
+  }
+
+  .snapshot-row p {
+    padding: 0 40px;
+  }
+
+  .snapshot-row ul {
+    padding-inline-start: unset;
+    padding-left: 50px;
+  }
+
+  .snapshot-row ul li {
+    text-align: left;
+    padding: 3px 0;
+  }
+
+  .snapshot-subtitle {
+    padding: 20px 100px;
+    font-weight: 500;
+  }
+
+  .snapshot-tools {
+    padding: 0 130px 30px;
+    text-align: center;
+  }
+
+  .snapshot-tools picture {
+    padding: 0 10px;
+  }
+
+  #miro,
+  #usabilityhub,
+  #figma,
+  #googleform,
+  #optimalworkshop {
+    width: 10%;
+    display: inline-block;
+  }
+
+  /*Snapshot:understand-medium*/
+  .ca {
+    padding: 150px 0;
+  }
+
+  #ca-image {
+    padding: 0 250px;
+  }
+
+  .interview {
+    padding: 100px 0;
+  }
+
+  #interview-image {
+    padding: 0 250px;
+  }
+
+  /*Snapshot:define-medium*/
+  .persona {
+    padding: 100px 0;
+  }
+
+  #persona-image {
+    padding: 0 300px;
+  }
+
+  .user-journey {
+    padding: 100px 0;
+  }
+
+  #user-journey-image {
+    padding: 0 300px;
+  }
+
+  .user-flow {
+    padding: 100px 0;
+  }
+
+  #user-flow-image {
+    padding: 0 300px;
+  }
+
+  /*Snpashot:ideate-medium*/
+  .card-sorting {
+    padding: 100px 0;
+  }
+
+  #card-sorting-image {
+    padding: 0 90px;
+  }
+
+  .ia {
+    padding: 100px 0;
+  }
+
+  #ia-image {
+    padding: 0 300px;
+  }
+
+  /*Snapshot:prototype-medium*/
+  .lofi {
+    padding: 100px 0;
+  }
+
+  #lofi-image {
+    padding: 10px 60px;
+  }
+
+  .hifi {
+    padding: 100px 0;
+  }
+
+  #hifi-image {
+    padding: 10px 100px;
+  }
+
+  /*Snapshot:test-*/
+  #usability-testing .empty {
+    padding: 90px;
+  }
+
+  .snapshot-row .container-image {
+    padding: 50px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ab-testing {
+    padding: 100px 0;
+  }
+
+  .snapshot main {
+    padding-bottom: 300px;
+  }
+
+  .snapshot-buttons {
+    padding: 50px 0;
+  }
+
+  .button-padding {
+    padding: 20px 0;
+  }
+
+  #refineanditerate-image {
+    padding: 150px;
+  }
+
+  /*diction styling:large*/
+  .diction-row {
+    padding: 50px 100px;
+    border-top: 1px solid #3A3A3A;
+  }
+
+  .diction-row ol {
+    padding-inline-start: unset;
+    padding: 0 20px;
+  }
+
+  .diction-twocolumnsrow {
+    padding: 50px 100px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #diction-persona-image {
+    padding: 100px;
+  }
+
+  .diction-persona {
+    padding: 20px 0;
+  }
+
+  .conclusion {
+    border-top: 1px solid #8AA08D;
+    padding: 200px 250px;
+    text-align: left;
+  }
+
+  .thankyou {
+    padding: 200px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 /* ==============================
@@ -982,184 +1178,226 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   [class*="col-"] {
-      float: left;
-      padding:10px;
-    }
-  main{
-        padding-top: 100px;
-      }
-  .column.col-md-6.col-lg-7 {
-            width: 58.33%;
-          }
-  .column.col-md-6.col-lg-5 {
-            width: 41.66%;
-              }
-
-  #work p{
-      text-align: left;
-      padding:0 20px;
+    float: left;
+    padding: 10px;
   }
-  .container-text{
-    padding: 10px 200px 50px 200px;
+
+  main {
+    padding-top: 100px;
+  }
+
+  .column.col-md-6.col-lg-7 {
+    width: 58.33%;
+  }
+
+  .column.col-md-6.col-lg-5 {
+    width: 41.66%;
+  }
+
+  #work p {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .container-text {
+    padding: 10px 200px 50px;
     max-width: 1200px;
     margin: 0 auto;
   }
-  .container-image{
+
+  .container-image {
     padding: 10px 100px;
     max-width: 1200px;
     margin: 0 auto;
   }
-/*about*/
-#mystory{
-  padding:20px 20px;
-}
-#skillsandtools{
-  padding:20px 20px;
-}
-/*Snapshot-styling-large*/
 
-.snapshot-graphic1 .add-padding{
-  padding:100px 0;
-}
-.snapshot .empty{
-  padding:250px;
-}
-.snapshot-statistic{
-  width:50%;
-  float:center;
-  padding:70px 100px;
-}
-.snapshot-logo{
-  text-align: center;
-  padding:30px 0;
-}
-#snapshot-logo{
-  width:200px;
-}
-.snapshot-row {
-  padding:50px 100px;
-  border-top: 1px solid #E57272;
-}
-.snapshot-row p{
-  padding: 0 100px;
-}
-.snapshot-row ul{
-padding-inline-start: unset;
-padding-left: 100px;
-}
-.snapshot-row ul li{
-text-align: left;
-padding:3px 0;
-}
-.snapshot-subtitle{
-  padding: 20px 100px;
-  font-weight: 500;
-}
-.snapshot-tools{
-  padding:0 130px 30px 130px;
-  text-align: center;
-}
-.snapshot-tools picture{
-  padding:0 10px;
-}
-#miro, #usabilityhub, #figma, #googleform, #optimalworkshop{
-  width:10%;
-  display:inline-block;
-}
+  /*about*/
+  #mystory {
+    padding: 20px;
+  }
 
-/*Snapshot:understand-large*/
+  #skillsandtools {
+    padding: 20px;
+  }
 
-.ca{
-  padding:50px 0;
-}
-#ca-image{
-  padding: 0px 280px;
-}
-.interview{
-  padding:50px 0;
-}
-#interview-image{
-  padding: 0px 250px;
-}
-/*Snapshot:define-large*/
-.persona{
-  padding:50px 0;
-}
-#persona-image{
-padding: 0px 400px;
-}
-.user-journey{
-padding:50px 0;
-}
-#user-journey-image{
-padding: 0px 350px;
-}
-.user-flow{
- padding:50px 0;
-}
-#user-flow-image{
- padding: 0px 400px;
-}
-/*Snpashot:ideate-large*/
-.card-sorting{
-padding:100px 0;
-}
-#card-sorting-image{
- padding:0 90px;
-}
-.ia{
-padding:50px 0;
-}
-#ia-image{
- padding:0 400px;
-}
-/*Snapshot:prototype-large*/
-.lofi{
-padding:50px 0;
-}
-#lofi-image{
- padding: 0px 100px;
-}
-.hifi{
-padding:50px 0;
-}
-#hifi-image{
-  padding: 0px 200px;
-}
-/*Snapshot:test-*/
-#usability-testing .empty{
-  padding:50px;
-}
+  /*Snapshot-styling-large*/
+  .snapshot-graphic1 .add-padding {
+    padding: 100px 0;
+  }
 
-#usability-testing-image {
-  padding: 0px 50px;
-}
-.snapshot-row .container-image{
-  padding: 50px 10px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.ab-testing{
-padding:100px 0;
-}
-.snapshot main{
-  padding-bottom:300px;
-}
-.snapshot-buttons{
-  padding: 50px 0;
-}
-.button-padding{
-  padding: 20px 0;
-}
-#refineanditerate-image{
-  padding:250px;
-}
+  .snapshot .empty {
+    padding: 250px;
+  }
 
-}
+  .snapshot-statistic {
+    width: 50%;
+    padding: 70px 100px;
+  }
 
+  .snapshot-logo {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  #snapshot-logo {
+    width: 200px;
+  }
+
+  .snapshot-row {
+    padding: 50px 100px;
+    border-top: 1px solid #E57272;
+  }
+
+  .snapshot-row p {
+    padding: 0 100px;
+  }
+
+  .snapshot-row ul {
+    padding-inline-start: unset;
+    padding-left: 100px;
+  }
+
+  .snapshot-row ul li {
+    text-align: left;
+    padding: 3px 0;
+  }
+
+  .snapshot-subtitle {
+    padding: 20px 100px;
+    font-weight: 500;
+  }
+
+  .snapshot-tools {
+    padding: 0 130px 30px;
+    text-align: center;
+  }
+
+  .snapshot-tools picture {
+    padding: 0 10px;
+  }
+
+  #miro,
+  #usabilityhub,
+  #figma,
+  #googleform,
+  #optimalworkshop {
+    width: 10%;
+    display: inline-block;
+  }
+
+  /*Snapshot:understand-large*/
+  .ca {
+    padding: 50px 0;
+  }
+
+  #ca-image {
+    padding: 0 280px;
+  }
+
+  .interview {
+    padding: 50px 0;
+  }
+
+  #interview-image {
+    padding: 0 250px;
+  }
+
+  /*Snapshot:define-large*/
+  .persona {
+    padding: 50px 0;
+  }
+
+  #persona-image {
+    padding: 0 400px;
+  }
+
+  .user-journey {
+    padding: 50px 0;
+  }
+
+  #user-journey-image {
+    padding: 0 350px;
+  }
+
+  .user-flow {
+    padding: 50px 0;
+  }
+
+  #user-flow-image {
+    padding: 0 400px;
+  }
+
+  /*Snpashot:ideate-large*/
+  .card-sorting {
+    padding: 100px 0;
+  }
+
+  #card-sorting-image {
+    padding: 0 90px;
+  }
+
+  .ia {
+    padding: 50px 0;
+  }
+
+  #ia-image {
+    padding: 0 400px;
+  }
+
+  /*Snapshot:prototype-large*/
+  .lofi {
+    padding: 50px 0;
+  }
+
+  #lofi-image {
+    padding: 0 100px;
+  }
+
+  .hifi {
+    padding: 50px 0;
+  }
+
+  #hifi-image {
+    padding: 0 200px;
+  }
+
+  /*Snapshot:test-*/
+  #usability-testing .empty {
+    padding: 50px;
+  }
+
+  #usability-testing-image {
+    padding: 0 50px;
+  }
+
+  .snapshot-row .container-image {
+    padding: 50px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ab-testing {
+    padding: 100px 0;
+  }
+
+  .snapshot main {
+    padding-bottom: 300px;
+  }
+
+  .snapshot-buttons {
+    padding: 50px 0;
+  }
+
+  .button-padding {
+    padding: 20px 0;
+  }
+
+  #refineanditerate-image {
+    padding: 250px;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
